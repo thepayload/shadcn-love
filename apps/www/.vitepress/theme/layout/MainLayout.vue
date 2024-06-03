@@ -6,10 +6,18 @@ import { type NavItem, docsConfig } from '../config/docs'
 import Logo from '../components/Logo.vue'
 import MobileNav from '../components/MobileNav.vue'
 import CodeConfigCustomizer from '../components/CodeConfigCustomizer.vue'
-
+import ListItem from '../../../src/lib/registry/default/example/NavigationMenuDemoItem.vue'
 import Kbd from '../components/Kbd.vue'
 import ThemePopover from '../components/ThemePopover.vue'
-import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator } from '@/lib/registry/default/ui/command'
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+} from '@/lib/registry/default/ui/command'
 
 import { Button } from '@/lib/registry/default/ui/button'
 import RadixIconsGithubLogo from '~icons/radix-icons/github-logo'
@@ -21,6 +29,13 @@ import { Toaster as DefaultToaster } from '@/lib/registry/default/ui/toast'
 import { Toaster as NewYorkSonner } from '@/lib/registry/new-york/ui/sonner'
 import { Toaster as NewYorkToaster } from '@/lib/registry/new-york/ui/toast'
 import { TooltipProvider } from '@/lib/registry/new-york/ui/tooltip'
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from '/lib/registry/default/ui/navigation-menu'
 
 import File from '~icons/radix-icons/file'
 import Circle from '~icons/radix-icons/circle'
@@ -68,21 +83,23 @@ watch([Meta_K, Ctrl_K], (v) => {
 function handleSelectLink(item: NavItem) {
   if (item.external)
     window.open(item.href, '_blank')
-  else
-    $router.go(item.href)
+  else $router.go(item.href)
 
   isOpen.value = false
 }
 
-watch(() => $route.path, (n) => {
-  // @ts-expect-error View Transition API not supported by all the browser yet
-  if (document.startViewTransition) {
+watch(
+  () => $route.path,
+  (n) => {
     // @ts-expect-error View Transition API not supported by all the browser yet
-    document.startViewTransition(() => {
-      console.log('soft navigating to: ', n)
-    })
-  }
-})
+    if (document.startViewTransition) {
+      // @ts-expect-error View Transition API not supported by all the browser yet
+      document.startViewTransition(() => {
+        console.log('soft navigating to: ', n)
+      })
+    }
+  },
+)
 </script>
 
 <template>
@@ -90,11 +107,15 @@ watch(() => $route.path, (n) => {
     <div v-if="$route.data.frontmatter.layout === false">
       <Content :key="$route.path" />
     </div>
-    <div v-else vaul-drawer-wrapper class="flex min-h-screen flex-col bg-background">
-      <header class="sticky z-40 top-0 bg-background/80 backdrop-blur-lg border-b border-border">
-        <div
-          class="container flex h-14 max-w-screen-2xl items-center"
-        >
+    <div
+      v-else
+      vaul-drawer-wrapper
+      class="flex min-h-screen flex-col bg-background"
+    >
+      <header
+        class="sticky z-40 top-0 bg-background/80 backdrop-blur-lg border-b border-border"
+      >
+        <div class="container flex h-14 max-w-screen-2xl items-center">
           <div class="mr-4 md:mr-1 hidden md:flex">
             <Logo />
 
@@ -106,19 +127,59 @@ watch(() => $route.path, (n) => {
                 :key="route.title"
                 :href="route.href"
                 :target="route.external ? '_target' : undefined"
-                class="transition-colors hover:text-foreground/80 text-foreground/60"
+                class="transition-colors hover:text-foreground/80 text-foreground/60 relative"
                 :class="{
-                  'font-semibold !text-foreground': $route.path === `${route.href}.html`,
+                  'font-semibold !text-foreground':
+                    $route.path === `${route.href}.html`,
                   'hidden lg:block': route?.href?.includes('github'),
                 }"
               >
-                {{ route.title }}
+                <template v-if="!route.items">
+                  {{ route.title }}
+                  <span
+                    v-if="route.label"
+                    class="absolute -top-2 -right-5 font-normal rounded-md bg-[#adfa1d] px-1 py-0.5 text-[0.6rem] leading-none text-[#000000] no-underline group-hover:no-underline"
+                  >
+                    {{ route.label }}
+                  </span>
+                </template>
+                <NavigationMenu v-else>
+                  <NavigationMenuList>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger class="px-1.5 py-1 hover:!bg-transparent bg-transparent focus:!bg-transparent data-[active]:!bg-transparent data-[state=open]:!bg-transparent">
+                        {{ route.title }}
+                        <span
+                          v-if="route.label"
+                          class="absolute top-2 -right-5 font-normal rounded-md bg-[#adfa1d] px-1 py-0.5 text-[0.6rem] leading-none text-[#000000] no-underline group-hover:no-underline"
+                        >
+                          {{ route.label }}
+                        </span>
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <ul
+                          class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]"
+                        >
+                          <ListItem
+                            v-for="item in route.items"
+                            :key="item.title"
+                            :title="item.title"
+                            :href="item.href"
+                          >
+                            <p class="font-normal">{{ item.description }}</p>
+                          </ListItem>
+                        </ul>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
               </a>
             </nav>
           </div>
           <MobileNav />
 
-          <div class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+          <div
+            class="flex flex-1 items-center justify-between space-x-2 md:justify-end"
+          >
             <div class="w-full flex-1 md:w-auto md:flex-none">
               <Button
                 variant="outline"
@@ -127,7 +188,9 @@ watch(() => $route.path, (n) => {
               >
                 <span class="hidden lg:inline-flex">Search documentation...</span>
                 <span class="inline-flex lg:hidden">Search...</span>
-                <Kbd class="pointer-events-none absolute right-[0.3rem] top-[0.3rem] hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
+                <Kbd
+                  class="pointer-events-none absolute right-[0.3rem] top-[0.3rem] hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex"
+                >
                   <span class="text-xs">⌘</span>K
                 </Kbd>
               </Button>
@@ -143,7 +206,8 @@ watch(() => $route.path, (n) => {
                 :key="link.name"
                 as="a"
                 class="w-9 h-9"
-                :href="link.href" target="_blank"
+                :href="link.href"
+                target="_blank"
                 :variant="'ghost'"
                 :size="'icon'"
               >
@@ -169,14 +233,17 @@ watch(() => $route.path, (n) => {
         </div>
       </header>
 
-      <div class="flex-1  bg-background">
+      <div class="flex-1 bg-background">
         <Transition name="fade" mode="out-in">
           <component :is="'docs'" v-if="$route.path.includes('docs')">
             <Transition name="fade" mode="out-in">
               <Content :key="$route.path" />
             </Transition>
           </component>
-          <component :is="'examples'" v-else-if="$route.path.includes('examples')">
+          <component
+            :is="'examples'"
+            v-else-if="$route.path.includes('examples')"
+          >
             <Transition name="fade" mode="out-in">
               <Content :key="$route.path" />
             </Transition>
@@ -193,8 +260,12 @@ watch(() => $route.path, (n) => {
       </div>
 
       <footer class="py-6 md:px-8 md:py-0">
-        <div class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
-          <div class="text-center text-sm leading-loose text-muted-foreground md:text-left">
+        <div
+          class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row"
+        >
+          <div
+            class="text-center text-sm leading-loose text-muted-foreground md:text-left"
+          >
             <span class="inline-block">
               Built and designed by
               <a
@@ -235,12 +306,8 @@ watch(() => $route.path, (n) => {
         <DialogContent class="p-0">
           <Command>
             <CommandInput placeholder="Type a command or search..." />
-            <CommandEmpty>
-              No results found.
-            </CommandEmpty>
-            <CommandList
-              @escape-key-down=" isOpen = false"
-            >
+            <CommandEmpty> No results found. </CommandEmpty>
+            <CommandList @escape-key-down="isOpen = false">
               <CommandGroup heading="Links">
                 <CommandItem
                   v-for="item in docsConfig.mainNav"
@@ -255,15 +322,18 @@ watch(() => $route.path, (n) => {
                 </CommandItem>
               </CommandGroup>
               <CommandSeparator />
-              <CommandGroup v-for="item in docsConfig.sidebarNav" :key="item.title" :heading="item.title">
+              <CommandGroup
+                v-for="item in docsConfig.sidebarNav"
+                :key="item.title"
+                :heading="item.title"
+              >
                 <CommandItem
                   v-for="subItem in item.items"
                   :key="subItem.title"
                   :heading="subItem.title"
                   :value="subItem.title"
                   class="py-3"
-                  @select="
-                    handleSelectLink(subItem)"
+                  @select="handleSelectLink(subItem)"
                 >
                   <Circle class="mr-2 h-4 w-4" />
                   <span>{{ subItem.title }}</span>
