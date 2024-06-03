@@ -5,6 +5,8 @@ export interface NavItem {
   external?: boolean
   icon?: string
   label?: string
+  items?: NavItem[]
+  description?: string
 }
 
 export type SidebarNavItem = NavItem & {
@@ -46,6 +48,27 @@ export const docsConfig: DocsConfig = {
       title: 'GitHub',
       href: 'https://github.com/radix-vue/shadcn-vue',
       external: true,
+    },
+    {
+      title: 'Pro',
+      label: 'New',
+      items: [
+        {
+          title: 'Blocks',
+          href: '/pro/blocks',
+          description: 'Pre-built components, including authentication, navigation, and more.',
+        },
+        {
+          title: 'Products',
+          href: '/pro/products',
+          description: 'Some examples of products like e-commerce, CRM, and more. Built with Shadcn Vue.',
+        },
+        {
+          title: 'Themes',
+          href: '/pro/themes',
+          description: 'Some pre-built themes configured with Shadcn Vue. Including spacing, colors, and more.',
+        },
+      ],
     },
   ],
   sidebarNav: [
@@ -361,6 +384,32 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Tooltip',
           href: '/docs/components/tooltip',
+        },
+      ],
+    },
+    {
+      title: 'Blocks',
+      label: 'Pro',
+      items: [
+        {
+          title: 'Login',
+          href: '/docs/blocks/login',
+        },
+        {
+          title: 'Register',
+          href: '/docs/blocks/register',
+        },
+        {
+          title: 'Sidebar',
+          href: '/docs/blocks/sidebar',
+        },
+        {
+          title: 'Navbar',
+          href: '/docs/blocks/navbar',
+        },
+        {
+          title: 'Widget',
+          href: '/docs/blocks/widget',
         },
       ],
     },
