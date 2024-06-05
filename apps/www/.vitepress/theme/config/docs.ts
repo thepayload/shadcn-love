@@ -393,23 +393,23 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: 'Login',
-          href: '/docs/blocks/login',
+          href: '/pro/blocks/login',
         },
         {
           title: 'Register',
-          href: '/docs/blocks/register',
+          href: '/pro/blocks/register',
         },
         {
           title: 'Sidebar',
-          href: '/docs/blocks/sidebar',
+          href: '/pro/blocks/sidebar',
         },
         {
           title: 'Navbar',
-          href: '/docs/blocks/navbar',
+          href: '/pro/blocks/navbar',
         },
         {
           title: 'Widget',
-          href: '/docs/blocks/widget',
+          href: '/pro/blocks/widget',
         },
       ],
     },
