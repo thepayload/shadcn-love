@@ -109,7 +109,7 @@ watch(
       >
         <div class="container flex h-14 max-w-screen-2xl items-center">
           <div class="mr-4 md:mr-1 hidden md:flex">
-            <Logo />
+            <Logo class="w-8 h-8" />
 
             <nav
               class="flex items-center max-lg:space-x-4 space-x-6 text-sm font-medium"
