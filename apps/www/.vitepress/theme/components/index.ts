@@ -1,5 +1,6 @@
 export { default as CodeWrapper } from './CodeWrapper'
 export { default as ComponentPreview } from './ComponentPreview.vue'
+export { default as ProComponentPreview } from './ProComponentPreview.vue'
 export { default as APITable } from './APITable.vue'
 export { default as TabPreview } from './TabPreview.vue'
 export { default as TabMarkdown } from './TabMarkdown.vue'

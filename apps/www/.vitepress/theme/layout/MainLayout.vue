@@ -248,6 +248,14 @@ watch(
               <Content :key="$route.path" />
             </Transition>
           </component>
+          <component
+            :is="'docs'"
+            v-else-if="$route.path.includes('pro')"
+          >
+            <Transition name="fade" mode="out-in">
+              <Content :key="$route.path" />
+            </Transition>
+          </component>
           <component :is="frontmatter.layout" v-else-if="frontmatter.layout">
             <slot />
           </component>
