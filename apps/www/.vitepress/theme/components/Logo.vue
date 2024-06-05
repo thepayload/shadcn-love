@@ -6,74 +6,27 @@
     class="mr-4 md:mr-2 lg:mr-6 flex items-center lg:space-x1 xl:space-x-2"
   >
     <svg
-      width="30"
-      name="SVGL Logo"
-      viewBox="0 0 512 512"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      class=""
+      width="100%"
+      height="100%"
+      fill="none"
+      viewBox="0 0 32 33"
     >
-      <rect
-        id="r4"
-        width="512"
-        height="512"
-        x="0"
-        y="0"
-        rx="128"
-        fill="#222"
-        stroke="#FFFFFF"
-        stroke-width="0"
-        stroke-opacity="100%"
-        paint-order="stroke"
+      <path
+        fill="#111827"
+        fill-opacity="0.2"
+        d="M0 18.83L.08 6.832C.094 4.66 1.613 2.798 3.71 2.383L15.297.086c2.784-.552 5.368 1.627 5.35 4.51l-.08 12c-.015 2.171-1.534 4.032-3.631 4.448L5.349 23.341C2.565 23.893-.019 21.714 0 18.83z"
       />
-      <rect
-        width="512"
-        height="512"
-        x="0"
-        y="0"
-        fill="url(#r6)"
-        rx="128"
-        style="mix-blend-mode: overlay"
+      <path
+        fill="#111827"
+        fill-opacity="0.5"
+        d="M5.677 23.617l.08-12C5.77 9.447 7.29 7.586 9.387 7.17l11.587-2.296c2.784-.552 5.368 1.626 5.349 4.51l-.08 12c-.014 2.171-1.533 4.032-3.63 4.448l-11.587 2.297c-2.784.551-5.368-1.627-5.349-4.51z"
       />
-      <clipPath id="clip"><use xlink:href="#r4" /></clipPath>
-      <defs>
-        <linearGradient
-          id="r5"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="rotate(135)"
-          style="transform-origin: center center"
-        >
-          <stop stop-color="#222" />
-          <stop offset="1" stop-color="#222222" />
-        </linearGradient>
-        <radialGradient
-          id="r6"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(256) rotate(90) scale(512)"
-        >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
-        </radialGradient>
-      </defs>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="310"
-        height="310"
-        fill="#e8e8e8"
-        viewBox="0 0 256 256"
-        x="101"
-        y="101"
-        alignment-baseline="middle"
-        style="color: rgb(255, 255, 255)"
-      >
-        <path
-          d="M168,32H88A56.06,56.06,0,0,0,32,88v80a56.06,56.06,0,0,0,56,56h48a8.07,8.07,0,0,0,2.53-.41c26.23-8.75,76.31-58.83,85.06-85.06A8.07,8.07,0,0,0,224,136V88A56.06,56.06,0,0,0,168,32ZM48,168V88A40,40,0,0,1,88,48h80a40,40,0,0,1,40,40v40H184a56.06,56.06,0,0,0-56,56v24H88A40,40,0,0,1,48,168Zm96,35.14V184a40,40,0,0,1,40-40h19.14C191,163.5,163.5,191,144,203.14Z"
-        />
-      </svg>
+      <path
+        fill="#111827"
+        fill-opacity="0.8"
+        d="M11.354 28.404l.08-12c.014-2.172 1.533-4.032 3.63-4.448l11.587-2.297c2.784-.552 5.368 1.627 5.349 4.51l-.08 12c-.014 2.172-1.533 4.033-3.63 4.448l-11.587 2.297c-2.784.552-5.368-1.627-5.35-4.51z"
+      />
     </svg>
   </a>
 </template>
