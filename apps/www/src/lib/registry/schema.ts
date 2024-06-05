@@ -11,6 +11,7 @@ export const registrySchema = z.array(
       'components:component',
       'components:example',
       'components:block',
+      'components:pro',
     ]),
   }),
 )
