@@ -34,7 +34,10 @@ export async function buildRegistry() {
   const block_path = resolve('./src/lib/registry/default/block')
   const blockRegistry = await crawlDirectory(block_path, 'block')
 
-  return uiRegistry.concat(exampleRegistry).concat(blockRegistry)
+  const pro_path = resolve('./src/lib/registry/default/pro')
+  const proRegistry = await crawlDirectory(pro_path, 'pro')
+
+  return uiRegistry.concat(exampleRegistry).concat(blockRegistry).concat(proRegistry)
 }
 
 async function crawlUI(rootPath: string) {
@@ -58,7 +61,7 @@ async function crawlUI(rootPath: string) {
   return uiRegistry
 }
 
-async function crawlDirectory(rootPath: string, typeName: 'example' | 'block') {
+async function crawlDirectory(rootPath: string, typeName: 'example' | 'block' | 'pro') {
   const type = `components:${typeName}` as const
 
   const dir = await readdir(rootPath, {
