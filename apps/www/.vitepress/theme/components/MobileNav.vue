@@ -49,7 +49,7 @@ const open = ref(false)
       </Button>
     </SheetTrigger>
     <SheetContent side="left" class="pr-0">
-      <Logo @click="open = false" />
+      <Logo class="w-8 h-8" @click="open = false" />
       <ScrollArea class="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
         <div class="flex flex-col space-y-3">
           <a
