@@ -1480,6 +1480,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/block/Dashboard07.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/block/Dashboard07.vue"],
     },
+    "Login01": {
+      name: "Login01",
+      type: "components:pro",
+      registryDependencies: ["button"],
+      component: () => import("../src/lib/registry/default/pro/Login01.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/pro/Login01.vue"],
+    },
   },  "new-york": {
     "AccordionDemo": {
       name: "AccordionDemo",
@@ -2957,6 +2964,13 @@ export const Index = {
       registryDependencies: ["badge","button","card","dropdown-menu","input","textarea","label","toggle-group","breadcrumb","sheet","table","select","tooltip"],
       component: () => import("../src/lib/registry/new-york/block/Dashboard07.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/block/Dashboard07.vue"],
+    },
+    "Login01": {
+      name: "Login01",
+      type: "components:pro",
+      registryDependencies: ["button"],
+      component: () => import("../src/lib/registry/new-york/pro/Login01.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/pro/Login01.vue"],
     },
   },
 }
