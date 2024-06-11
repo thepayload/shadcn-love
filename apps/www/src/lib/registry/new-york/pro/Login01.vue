@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Logo from '../../../../../.vitepress/theme/components/Logo.vue'
+import Logo from '@/components/brand/Logo.vue'
 import {
   Card,
   CardContent,

@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 import Logo from '@/components/brand/Logo.vue'
+import Google from '@/components/icons/Google.vue'
+import Facebook from '@/components/icons/Facebook.vue'
 import {
   Card,
   CardContent,
@@ -7,7 +9,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@/lib/registry/default/ui/card'
+} from '@/lib/registry/new-york/ui/card'
 import {
   FormControl,
   FormDescription,
@@ -15,10 +17,10 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/lib/registry/default/ui/form'
-import { Input } from '@/lib/registry/default/ui/input'
-import { Button } from '@/lib/registry/default/ui/button'
-import { Separator } from '@/lib/registry/default/ui/separator'
+} from '@/lib/registry/new-york/ui/form'
+import { Input } from '@/lib/registry/new-york/ui/input'
+import { Button } from '@/lib/registry/new-york/ui/button'
+import { Separator } from '@/lib/registry/new-york/ui/separator'
 </script>
 
 <template>
@@ -55,12 +57,14 @@ import { Separator } from '@/lib/registry/default/ui/separator'
         Sign in
       </Button>
       <Separator class="my-2" />
-      <Button variant="secondary" class="w-full">
-        Login with Google
-      </Button>
-      <Button variant="secondary" class="w-full">
-        Login with Facebook
-      </Button>
+      <div class="flex flex-row justify-between items-center gap-2">
+        <Button variant="secondary" class="w-full">
+          <Google class="w-10 h-10" /> with Google
+        </Button>
+        <Button variant="secondary" class="w-full">
+          <Facebook class="w-10 h-10" /> with Facebook
+        </Button>
+      </div>
     </CardFooter>
   </Card>
 </template>
