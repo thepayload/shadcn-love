@@ -42,7 +42,7 @@ import { Separator } from '@/lib/registry/new-york/ui/separator'
         <FormItem>
           <FormLabel>Password</FormLabel>
           <FormControl>
-            <Input type="password" v-bind="componentField" />
+            <Input type="password" placeholder="Your password" v-bind="componentField" />
           </FormControl>
           <FormDescription />
           <FormMessage />
@@ -55,10 +55,10 @@ import { Separator } from '@/lib/registry/new-york/ui/separator'
       </Button>
       <Separator class="my-2" />
       <Button variant="secondary" class="w-full">
-        Login with Google
+        <Google class="w-4 h-4 mr-1" /> Login with Google
       </Button>
       <Button variant="secondary" class="w-full">
-        Login with Facebook
+        <Facebook class="w-4 h-4 mr-1" /> Login with Facebook
       </Button>
     </CardFooter>
   </Card>

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import Logo from '@/components/brand/Logo.vue'
-import Google from '@/components/icons/Google.vue'
-import Facebook from '@/components/icons/Facebook.vue'
+import Google from '@/components/brand/Google.vue'
+import Facebook from '@/components/brand/Facebook.vue'
 import {
   Card,
   CardContent,
@@ -45,7 +45,7 @@ import { Separator } from '@/lib/registry/new-york/ui/separator'
         <FormItem>
           <FormLabel>Password</FormLabel>
           <FormControl>
-            <Input type="password" v-bind="componentField" />
+            <Input type="password" placeholder="Your password" v-bind="componentField" />
           </FormControl>
           <FormDescription />
           <FormMessage />
@@ -59,10 +59,10 @@ import { Separator } from '@/lib/registry/new-york/ui/separator'
       <Separator class="my-2" />
       <div class="flex flex-row justify-between items-center gap-2">
         <Button variant="secondary" class="w-full">
-          <Google class="w-10 h-10" /> with Google
+          <Google class="w-4 h-4 mr-1" /> with Google
         </Button>
         <Button variant="secondary" class="w-full">
-          <Facebook class="w-10 h-10" /> with Facebook
+          <Facebook class="w-4 h-4 mr-1" /> with Facebook
         </Button>
       </div>
     </CardFooter>
