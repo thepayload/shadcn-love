@@ -1522,7 +1522,14 @@ export const Index = {
       component: () => import("../src/lib/registry/default/pro/Login01.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/pro/Login01.vue"],
     },
-  }, "new-york": {
+    "Login02": {
+      name: "Login02",
+      type: "components:pro",
+      registryDependencies: ["button"],
+      component: () => import("../src/lib/registry/default/pro/Login02.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/pro/Login02.vue"],
+    },
+  },  "new-york": {
     "AccordionDemo": {
       name: "AccordionDemo",
       type: "components:example",
@@ -3041,6 +3048,13 @@ export const Index = {
       registryDependencies: ["button"],
       component: () => import("../src/lib/registry/new-york/pro/Login01.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/pro/Login01.vue"],
+    },
+    "Login02": {
+      name: "Login02",
+      type: "components:pro",
+      registryDependencies: ["button"],
+      component: () => import("../src/lib/registry/new-york/pro/Login02.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/pro/Login02.vue"],
     },
   },
 }

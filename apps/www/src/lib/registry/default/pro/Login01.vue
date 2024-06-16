@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-import Logo from '../../../../../.vitepress/theme/components/Logo.vue'
+import Logo from '@/components/brand/Logo.vue'
+import Google from '@/components/brand/Google.vue'
+import Facebook from '@/components/brand/Facebook.vue'
 import {
   Card,
   CardContent,
@@ -43,7 +45,7 @@ import { Separator } from '@/lib/registry/default/ui/separator'
         <FormItem>
           <FormLabel>Password</FormLabel>
           <FormControl>
-            <Input type="password" v-bind="componentField" />
+            <Input type="password" placeholder="Your password" v-bind="componentField" />
           </FormControl>
           <FormDescription />
           <FormMessage />
@@ -56,10 +58,10 @@ import { Separator } from '@/lib/registry/default/ui/separator'
       </Button>
       <Separator class="my-2" />
       <Button variant="secondary" class="w-full">
-        Login with Google
+        <Google class="w-4 h-4 mr-1" /> Login with Google
       </Button>
       <Button variant="secondary" class="w-full">
-        Login with Facebook
+        <Facebook class="w-4 h-4 mr-1" /> Login with Facebook
       </Button>
     </CardFooter>
   </Card>
