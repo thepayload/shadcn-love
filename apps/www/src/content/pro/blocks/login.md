@@ -5,3 +5,5 @@ label: Comming
 ---
 
 <ProComponentPreview name="Login01" class="sm:max-w-[70%]" />
+
+<ProComponentPreview name="Login02" class="sm:max-w-[70%]" />
