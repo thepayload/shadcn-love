@@ -56,6 +56,7 @@ components.forEach((componentPath) => {
     writeFileSync(metaMdFilePath, parsedString)
   }
   catch (err) {
+    // eslint-disable-next-line no-console
     console.log(err)
   }
 })
