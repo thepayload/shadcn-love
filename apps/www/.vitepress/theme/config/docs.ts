@@ -326,6 +326,7 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Separator',
           href: '/docs/components/separator',
+          label: 'Updated',
         },
         {
           title: 'Sheet',
@@ -384,6 +385,156 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Tooltip',
           href: '/docs/components/tooltip',
+        },
+      ],
+    },
+    {
+      title: 'Components Wrapper',
+      label: 'Pro',
+      items: [
+        {
+          title: 'Alert',
+          href: '/pro/wrappers/alert',
+        },
+        {
+          title: 'Alert Dialog',
+          href: '/pro/wrappers/alert-dialog',
+        },
+        {
+          title: 'Avatar',
+          href: '/pro/wrappers/avatar',
+        },
+        {
+          title: 'Breadcrumb',
+          href: '/pro/wrappers/breadcrumb',
+        },
+        {
+          title: 'Calendar',
+          href: '/pro/wrappers/calendar',
+        },
+        {
+          title: 'Card',
+          href: '/pro/wrappers/card',
+        },
+        {
+          title: 'Carousel',
+          href: '/pro/wrappers/carousel',
+        },
+        {
+          title: 'Checkbox',
+          href: '/pro/wrappers/checkbox',
+        },
+        {
+          title: 'Combobox',
+          href: '/pro/wrappers/combobox',
+        },
+        {
+          title: 'Command',
+          href: '/pro/wrappers/command',
+        },
+        {
+          title: 'Context Menu',
+          href: '/pro/wrappers/context-menu',
+        },
+        {
+          title: 'Data Table',
+          href: '/pro/wrappers/data-table',
+        },
+        {
+          title: 'Date Picker',
+          href: '/pro/wrappers/date-picker',
+        },
+        {
+          title: 'Dialog',
+          href: '/pro/wrappers/dialog',
+        },
+        {
+          title: 'Drawer',
+          href: '/pro/wrappers/drawer',
+        },
+        {
+          title: 'Dropdown Menu',
+          href: '/pro/wrappers/dropdown-menu',
+        },
+        {
+          title: 'Form',
+          href: '/pro/wrappers/form',
+        },
+        {
+          title: 'Input',
+          href: '/pro/wrappers/input',
+        },
+        {
+          title: 'Menubar',
+          href: '/pro/wrappers/menubar',
+        },
+        {
+          title: 'Number Field',
+          href: '/pro/wrappers/number-field',
+        },
+        {
+          title: 'Pagination',
+          href: '/pro/wrappers/pagination',
+        },
+        {
+          title: 'Pin Input',
+          href: '/pro/wrappers/pin-input',
+        },
+        {
+          title: 'Radio Group',
+          href: '/pro/wrappers/radio-group',
+        },
+        {
+          title: 'Range Calendar',
+          href: '/pro/wrappers/range-calendar',
+        },
+        {
+          title: 'Select',
+          href: '/pro/wrappers/select',
+        },
+        {
+          title: 'Sheet',
+          href: '/pro/wrappers/sheet',
+        },
+        {
+          title: 'Sekelton',
+          href: '/pro/wrappers/skeleton',
+        },
+        {
+          title: 'Slider',
+          href: '/pro/wrappers/slider',
+        },
+        {
+          title: 'Switch',
+          href: '/pro/wrappers/switch',
+        },
+        {
+          title: 'Table',
+          href: '/pro/wrappers/table',
+        },
+        {
+          title: 'Tabs',
+          href: '/pro/wrappers/tabs',
+        },
+        {
+          title: 'Tags Input',
+          href: '/pro/wrappers/tags-input',
+        },
+        {
+          title: 'Textarea',
+          href: '/pro/wrappers/textarea',
+        },
+        {
+          title: 'Toggle',
+          href: '/pro/wrappers/toogle',
+        },
+        {
+          title: 'Toggle Group',
+          href: '/pro/wrappers/toggle-group',
+        },
+        {
+          title: 'Tooltip',
+          href: '/pro/wrappers/tootip',
         },
       ],
     },
