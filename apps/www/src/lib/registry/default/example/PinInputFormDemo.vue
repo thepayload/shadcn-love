@@ -37,7 +37,10 @@ const onSubmit = handleSubmit(({ pin }) => {
   })
 })
 
-const handleComplete = (e: string[]) => console.log(e.join(''))
+function handleComplete(e: string[]) {
+  // eslint-disable-next-line no-console
+  return console.log(e.join(''))
+}
 </script>
 
 <template>

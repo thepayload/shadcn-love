@@ -95,6 +95,7 @@ watch(
     if (document.startViewTransition) {
       // @ts-expect-error View Transition API not supported by all the browser yet
       document.startViewTransition(() => {
+        // eslint-disable-next-line no-console
         console.log('soft navigating to: ', n)
       })
     }
