@@ -339,3 +339,34 @@ You can enable Custom Formatters in your browser to automate this process.
 
 - [Firefox](https://firefox-source-docs.mozilla.org/devtools-user/custom_formatters/index.html)
 - Chrome, Edge, Brave and other Chromium based [browsers](https://www.google.com/search?q=how+to+enable+custom++formatter+chrome)
+
+## Sync with primary repository
+This repository is forked from repository [`radix-vue/shadcn-vue`](https://github.com/radix-vue/shadcn-vue)
+So we will need to sync updates from repository [`radix-vue/shadcn-vue`](https://github.com/radix-vue/shadcn-vue).
+Basically there will be 3 types of branches
+- `dev`: branch sync with repository [`radix-vue/shadcn-vue`](https://github.com/radix-vue/shadcn-vue)
+- `pro`: main branch where we add new components
+- `feat branches`: branches are split from pro to add new features to the pro version.
+
+### Sync commit from `radix-vue/shadcn-vue` to `dev` branch
+
+```
+  git fetch
+  git checkout dev
+  git rebase fork/dev
+  git push -f
+```
+
+### Rebase `pro` with `dev` branch
+```
+  git checkout pro
+  git rebase dev
+  git push -f
+```
+
+### Create new branch from `pro` branch
+```
+  git checkout pro
+  git pull
+  git checkout -b feat/new-branch
+```
