@@ -22,7 +22,11 @@ const sourceLink = 'https://github.com/radix-vue/shadcn-vue/tree/dev/'
       >
         <ScrollArea orientation="vertical" class="relative overflow-hidden h-full py-6 pr-6 lg:py-8" :type="'auto'">
           <div class="w-full">
-            <div v-for="docsGroup in docsConfig.sidebarNav" :key="docsGroup.title" class="pb-4">
+            <div
+              v-for="docsGroup in docsConfig.sidebarNav" :key="docsGroup.title" class="pb-4" :class="{
+                'cursor-not-allowed opacity-50': docsGroup.disabled,
+              }"
+            >
               <h4
                 class="mb-1 rounded-md px-2 py-1 text-sm font-semibold"
               >
@@ -37,14 +41,18 @@ const sourceLink = 'https://github.com/radix-vue/shadcn-vue/tree/dev/'
                 v-for="doc in docsGroup.items "
                 :key="doc.title"
                 class="grid grid-flow-row auto-rows-max text-sm"
+                :class="{
+                  'cursor-not-allowed opacity-50': doc.disabled,
+                }"
               >
                 <a
                   v-if="doc.href"
                   :disabled="doc.disabled"
-                  :href="doc.href"
+                  :href="doc.disabled ? '#' : doc.href"
                   class="group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline text-muted-foreground"
                   :class="{
                     '!font-semibold !text-foreground': $route.path === `${doc.href}.html`,
+                    'cursor-not-allowed opacity-50': doc.disabled,
                   }"
                 >
                   {{ doc.title }}

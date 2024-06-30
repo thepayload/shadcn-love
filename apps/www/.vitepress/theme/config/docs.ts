@@ -399,6 +399,7 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Alert Dialog',
           href: '/pro/wrappers/alert-dialog',
+          disabled: true,
         },
         {
           title: 'Avatar',
@@ -407,134 +408,167 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Breadcrumb',
           href: '/pro/wrappers/breadcrumb',
+          disabled: true,
         },
         {
           title: 'Calendar',
           href: '/pro/wrappers/calendar',
+          disabled: true,
         },
         {
           title: 'Card',
           href: '/pro/wrappers/card',
+          disabled: true,
         },
         {
           title: 'Carousel',
           href: '/pro/wrappers/carousel',
+          disabled: true,
         },
         {
           title: 'Checkbox',
           href: '/pro/wrappers/checkbox',
+          disabled: true,
         },
         {
           title: 'Combobox',
           href: '/pro/wrappers/combobox',
+          disabled: true,
         },
         {
           title: 'Command',
           href: '/pro/wrappers/command',
+          disabled: true,
         },
         {
           title: 'Context Menu',
           href: '/pro/wrappers/context-menu',
+          disabled: true,
         },
         {
           title: 'Data Table',
           href: '/pro/wrappers/data-table',
+          disabled: true,
         },
         {
           title: 'Date Picker',
           href: '/pro/wrappers/date-picker',
+          disabled: true,
         },
         {
           title: 'Dialog',
           href: '/pro/wrappers/dialog',
+          disabled: true,
         },
         {
           title: 'Drawer',
           href: '/pro/wrappers/drawer',
+          disabled: true,
         },
         {
           title: 'Dropdown Menu',
           href: '/pro/wrappers/dropdown-menu',
+          disabled: true,
         },
         {
           title: 'Form',
           href: '/pro/wrappers/form',
+          disabled: true,
         },
         {
           title: 'Input',
           href: '/pro/wrappers/input',
+          disabled: true,
         },
         {
           title: 'Menubar',
           href: '/pro/wrappers/menubar',
+          disabled: true,
         },
         {
           title: 'Number Field',
           href: '/pro/wrappers/number-field',
+          disabled: true,
         },
         {
           title: 'Pagination',
           href: '/pro/wrappers/pagination',
+          disabled: true,
         },
         {
           title: 'Pin Input',
           href: '/pro/wrappers/pin-input',
+          disabled: true,
         },
         {
           title: 'Radio Group',
           href: '/pro/wrappers/radio-group',
+          disabled: true,
         },
         {
           title: 'Range Calendar',
           href: '/pro/wrappers/range-calendar',
+          disabled: true,
         },
         {
           title: 'Select',
           href: '/pro/wrappers/select',
+          disabled: true,
         },
         {
           title: 'Sheet',
           href: '/pro/wrappers/sheet',
+          disabled: true,
         },
         {
           title: 'Sekelton',
           href: '/pro/wrappers/skeleton',
+          disabled: true,
         },
         {
           title: 'Slider',
           href: '/pro/wrappers/slider',
+          disabled: true,
         },
         {
           title: 'Switch',
           href: '/pro/wrappers/switch',
+          disabled: true,
         },
         {
           title: 'Table',
           href: '/pro/wrappers/table',
+          disabled: true,
         },
         {
           title: 'Tabs',
           href: '/pro/wrappers/tabs',
+          disabled: true,
         },
         {
           title: 'Tags Input',
           href: '/pro/wrappers/tags-input',
+          disabled: true,
         },
         {
           title: 'Textarea',
           href: '/pro/wrappers/textarea',
+          disabled: true,
         },
         {
           title: 'Toggle',
           href: '/pro/wrappers/toogle',
+          disabled: true,
         },
         {
           title: 'Toggle Group',
           href: '/pro/wrappers/toggle-group',
+          disabled: true,
         },
         {
           title: 'Tooltip',
           href: '/pro/wrappers/tootip',
+          disabled: true,
         },
       ],
     },
