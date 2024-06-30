@@ -19,7 +19,7 @@
     },
     {
       "name": "AlertWrapper.vue",
-      "content": "<script setup lang=\"ts\">\nimport { cn } from '@/lib/utils'\nimport type { HTMLAttributes } from 'vue'\nimport { type AlertVariants, alertVariants } from '.'\nimport { AlertDescription, AlertTitle } from '.'\n\nconst props = defineProps<{\n  class?: HTMLAttributes['class']\n  variant?: AlertVariants['variant']\n  title?: string\n  description?: string\n  icon?: any\n}>()\n</script>\n\n<template>\n  <div :class=\"cn(alertVariants({ variant }), props.class)\" role=\"alert\">\n    <slot :title=\"title\" :description=\"description\">\n      <slot name=\"icon\">\n        <component :is=\"icon\" class=\"h-4 w-4\"></component>\n      </slot>\n      <AlertTitle>{{ title }}</AlertTitle>\n      <AlertDescription> {{ description }} </AlertDescription>\n    </slot>\n  </div>\n</template>\n"
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { type AlertVariants, alertVariants } from '.'\nimport { AlertDescription, AlertTitle } from '.'\nimport { cn } from '@/lib/utils'\n\nconst props = defineProps<{\n  class?: HTMLAttributes['class']\n  variant?: AlertVariants['variant']\n  title?: string\n  description?: string\n  icon?: any\n}>()\n</script>\n\n<template>\n  <div :class=\"cn(alertVariants({ variant }), props.class)\" role=\"alert\">\n    <slot :title=\"title\" :description=\"description\">\n      <slot name=\"icon\">\n        <component :is=\"icon\" class=\"h-4 w-4\" />\n      </slot>\n      <AlertTitle>{{ title }}</AlertTitle>\n      <AlertDescription> {{ description }} </AlertDescription>\n    </slot>\n  </div>\n</template>\n"
     },
     {
       "name": "index.ts",
