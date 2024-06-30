@@ -24,6 +24,7 @@
       "ui/alert/Alert.vue",
       "ui/alert/AlertDescription.vue",
       "ui/alert/AlertTitle.vue",
+      "ui/alert/AlertWrapper.vue",
       "ui/alert/index.ts"
     ],
     "type": "components:ui"
