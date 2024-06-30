@@ -136,6 +136,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/AvatarDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/AvatarDemo.vue"],
     },
+    "AvatarWrapperDemo": {
+      name: "AvatarWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["avatar"],
+      component: () => import("../src/lib/registry/default/example/AvatarWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/AvatarWrapperDemo.vue"],
+    },
     "BadgeDemo": {
       name: "BadgeDemo",
       type: "components:example",
@@ -1641,6 +1648,13 @@ export const Index = {
       registryDependencies: ["avatar"],
       component: () => import("../src/lib/registry/new-york/example/AvatarDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/AvatarDemo.vue"],
+    },
+    "AvatarWrapperDemo": {
+      name: "AvatarWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["avatar"],
+      component: () => import("../src/lib/registry/new-york/example/AvatarWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/AvatarWrapperDemo.vue"],
     },
     "BadgeDemo": {
       name: "BadgeDemo",
