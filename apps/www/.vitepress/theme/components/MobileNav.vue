@@ -62,7 +62,11 @@ const open = ref(false)
           </a>
         </div>
         <div class="flex flex-col space-y-2">
-          <div v-for="(items, index) in docsConfig.sidebarNav" :key="index" class="flex flex-col space-y-3 pt-6">
+          <div
+            v-for="(items, index) in docsConfig.sidebarNav" :key="index" class="flex flex-col space-y-3 pt-6" :class="{
+              'cursor-not-allowed opacity-50': items.disabled,
+            }"
+          >
             <div class="flex items-center">
               <h4 class="font-medium">
                 {{ items.title }}
@@ -74,8 +78,11 @@ const open = ref(false)
 
             <a
               v-for="item in items.items" :key="item.href"
-              :href="item.href"
+              :href="item.disabled ? '#' : item.href"
               class="text-muted-foreground inline-flex items-center"
+              :class="{
+                'cursor-not-allowed opacity-50': item.disabled,
+              }"
               @click="open = false"
             >
               {{ item.title }}
