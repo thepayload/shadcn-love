@@ -107,12 +107,14 @@
     "name": "avatar",
     "dependencies": [],
     "registryDependencies": [
-      "utils"
+      "utils",
+      "avatar"
     ],
     "files": [
       "ui/avatar/Avatar.vue",
       "ui/avatar/AvatarFallback.vue",
       "ui/avatar/AvatarImage.vue",
+      "ui/avatar/AvatarWrapper.vue",
       "ui/avatar/index.ts"
     ],
     "type": "components:ui"
