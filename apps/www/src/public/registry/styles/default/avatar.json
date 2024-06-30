@@ -2,7 +2,8 @@
   "name": "avatar",
   "dependencies": [],
   "registryDependencies": [
-    "utils"
+    "utils",
+    "avatar"
   ],
   "files": [
     {
@@ -18,8 +19,12 @@
       "content": "<script setup lang=\"ts\">\nimport { AvatarImage, type AvatarImageProps } from 'radix-vue'\n\nconst props = defineProps<AvatarImageProps>()\n</script>\n\n<template>\n  <AvatarImage v-bind=\"props\" class=\"h-full w-full object-cover\" />\n</template>\n"
     },
     {
+      "name": "AvatarWrapper.vue",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { type AvatarVariants, avatarVariant } from '.'\nimport { cn } from '@/lib/utils'\nimport { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'\n\nconst props = withDefaults(\n  defineProps<{\n    class?: HTMLAttributes['class']\n    size?: AvatarVariants['size']\n    shape?: AvatarVariants['shape']\n    fallback: string\n    src?: string\n    alt?: string\n  }>(),\n  {\n    size: 'sm',\n    shape: 'circle',\n    fallback: 'AX',\n  },\n)\n</script>\n\n<template>\n  <Avatar :class=\"cn(avatarVariant({ size, shape }), props.class)\">\n    <slot>\n      <AvatarImage v-if=\"src\" :src=\"src\" :alt=\"alt || src\" />\n      <AvatarFallback>{{ fallback }}</AvatarFallback>\n    </slot>\n  </Avatar>\n</template>\n"
+    },
+    {
       "name": "index.ts",
-      "content": "import { type VariantProps, cva } from 'class-variance-authority'\n\nexport { default as Avatar } from './Avatar.vue'\nexport { default as AvatarImage } from './AvatarImage.vue'\nexport { default as AvatarFallback } from './AvatarFallback.vue'\n\nexport const avatarVariant = cva(\n  'inline-flex items-center justify-center font-normal text-foreground select-none shrink-0 bg-secondary overflow-hidden',\n  {\n    variants: {\n      size: {\n        sm: 'h-10 w-10 text-xs',\n        base: 'h-16 w-16 text-2xl',\n        lg: 'h-32 w-32 text-5xl',\n      },\n      shape: {\n        circle: 'rounded-full',\n        square: 'rounded-md',\n      },\n    },\n  },\n)\n\nexport type AvatarVariants = VariantProps<typeof avatarVariant>\n"
+      "content": "import { type VariantProps, cva } from 'class-variance-authority'\n\nexport { default as Avatar } from './Avatar.vue'\nexport { default as AvatarImage } from './AvatarImage.vue'\nexport { default as AvatarFallback } from './AvatarFallback.vue'\nexport { default as AvatarWrapper } from './AvatarWrapper.vue'\n\nexport const avatarVariant = cva(\n  'inline-flex items-center justify-center font-normal text-foreground select-none shrink-0 bg-secondary overflow-hidden',\n  {\n    variants: {\n      size: {\n        sm: 'h-10 w-10 text-xs',\n        base: 'h-16 w-16 text-2xl',\n        lg: 'h-32 w-32 text-5xl',\n      },\n      shape: {\n        circle: 'rounded-full',\n        square: 'rounded-md',\n      },\n    },\n  },\n)\n\nexport type AvatarVariants = VariantProps<typeof avatarVariant>\n"
     }
   ],
   "type": "components:ui"
