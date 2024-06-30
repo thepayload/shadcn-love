@@ -1,0 +1,8 @@
+<script setup lang="ts">
+import { ExclamationTriangleIcon } from '@radix-icons/vue'
+import { AlertWrapper } from '@/lib/registry/new-york/ui/alert'
+</script>
+
+<template>
+  <AlertWrapper variant="destructive" title="Error" description="Your session has expired. Please log in again." :icon="ExclamationTriangleIcon" />
+</template>
