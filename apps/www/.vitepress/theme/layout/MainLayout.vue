@@ -342,6 +342,9 @@ watch(
                   :heading="subItem.title"
                   :value="subItem.title"
                   class="py-3"
+                  :class="{
+                    'cursor-not-allowed opacity-50': subItem.disabled,
+                  }"
                   @select="handleSelectLink(subItem)"
                 >
                   <Circle class="mr-2 h-4 w-4" />
