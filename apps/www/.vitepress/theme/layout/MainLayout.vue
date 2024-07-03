@@ -6,7 +6,7 @@ import { type NavItem, docsConfig } from '../config/docs'
 import Logo from '../components/Logo.vue'
 import MobileNav from '../components/MobileNav.vue'
 import CodeConfigCustomizer from '../components/CodeConfigCustomizer.vue'
-import ListItem from '../../../src/lib/registry/default/example/NavigationMenuDemoItem.vue'
+import ListItem from '../../../src/lib/registry/default/example/NavigationMenuDemo.vue'
 import Kbd from '../components/Kbd.vue'
 import ThemePopover from '../components/ThemePopover.vue'
 import {
