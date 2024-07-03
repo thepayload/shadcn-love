@@ -20,7 +20,7 @@ npx shadcn-vue@latest add wrapper-avatar
 
 <Steps>
 
-### Create new component (ex: `@/components/ui/alert/AvatarWrapper.vue`) and copy and paste the following code into your project
+### Create new component (ex: `@/components/ui/avatar/AvatarWrapper.vue`) and copy and paste the following code into your project
 
 ```vue
 <script setup lang="ts">
@@ -60,7 +60,7 @@ const props = withDefaults(
 
 ```vue
 <script setup lang="ts">
-import AvatarWrapper from '@/components/ui/alert/AvatarWrapper'
+import AvatarWrapper from '@/components/ui/avatar/AvatarWrapper'
 </script>
 
 <template>
