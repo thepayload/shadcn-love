@@ -2,8 +2,7 @@
   "name": "avatar",
   "dependencies": [],
   "registryDependencies": [
-    "utils",
-    "avatar"
+    "utils"
   ],
   "files": [
     {
@@ -20,7 +19,7 @@
     },
     {
       "name": "AvatarWrapper.vue",
-      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { type AvatarVariants, avatarVariant } from '.'\nimport { cn } from '@/lib/utils'\nimport { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'\n\nconst props = withDefaults(\n  defineProps<{\n    class?: HTMLAttributes['class']\n    size?: AvatarVariants['size']\n    shape?: AvatarVariants['shape']\n    fallback: string\n    src?: string\n    alt?: string\n  }>(),\n  {\n    size: 'sm',\n    shape: 'circle',\n    fallback: 'AX',\n  },\n)\n</script>\n\n<template>\n  <Avatar :class=\"cn(avatarVariant({ size, shape }), props.class)\">\n    <slot>\n      <AvatarImage v-if=\"src\" :src=\"src\" :alt=\"alt || src\" />\n      <AvatarFallback>{{ fallback }}</AvatarFallback>\n    </slot>\n  </Avatar>\n</template>\n"
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { type AvatarVariants, avatarVariant } from '.'\nimport { Avatar, AvatarFallback, AvatarImage } from '.'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(\n  defineProps<{\n    class?: HTMLAttributes['class']\n    size?: AvatarVariants['size']\n    shape?: AvatarVariants['shape']\n    fallback: string\n    src?: string\n    alt?: string\n  }>(),\n  {\n    size: 'sm',\n    shape: 'circle',\n    fallback: 'AX',\n  },\n)\n</script>\n\n<template>\n  <Avatar :class=\"cn(avatarVariant({ size, shape }), props.class)\">\n    <slot>\n      <AvatarImage v-if=\"src\" :src=\"src\" :alt=\"alt || src\" />\n      <AvatarFallback>{{ fallback }}</AvatarFallback>\n    </slot>\n  </Avatar>\n</template>\n"
     },
     {
       "name": "index.ts",

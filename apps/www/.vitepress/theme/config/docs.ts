@@ -543,7 +543,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Tabs',
           href: '/pro/wrappers/tabs',
-          disabled: true,
         },
         {
           title: 'Tags Input',
