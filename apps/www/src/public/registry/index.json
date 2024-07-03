@@ -107,8 +107,7 @@
     "name": "avatar",
     "dependencies": [],
     "registryDependencies": [
-      "utils",
-      "avatar"
+      "utils"
     ],
     "files": [
       "ui/avatar/Avatar.vue",
@@ -890,6 +889,7 @@
       "ui/tabs/TabsContent.vue",
       "ui/tabs/TabsList.vue",
       "ui/tabs/TabsTrigger.vue",
+      "ui/tabs/TabsWrapper.vue",
       "ui/tabs/index.ts"
     ],
     "type": "components:ui"

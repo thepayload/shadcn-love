@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ListItem from '../../../src/lib/registry/default/example/NavigationMenuDemo.vue'
 import { Button } from '@/lib/registry/default/ui/button'
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator } from '@/lib/registry/default/ui/command'
 import { Dialog, DialogContent } from '@/lib/registry/default/ui/dialog'

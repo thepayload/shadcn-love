@@ -1088,6 +1088,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/TabsVerticalDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/TabsVerticalDemo.vue"],
     },
+    "TabsWrapperDemo": {
+      name: "TabsWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["tabs","button","input","label","card"],
+      component: () => import("../src/lib/registry/default/example/TabsWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/TabsWrapperDemo.vue"],
+    },
     "TagsInputComboboxDemo": {
       name: "TagsInputComboboxDemo",
       type: "components:example",
@@ -2635,6 +2642,13 @@ export const Index = {
       registryDependencies: ["button", "card", "input", "label", "tabs"],
       component: () => import("../src/lib/registry/new-york/example/TabsVerticalDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/TabsVerticalDemo.vue"],
+    },
+    "TabsWrapperDemo": {
+      name: "TabsWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["tabs","button","input","label","card"],
+      component: () => import("../src/lib/registry/new-york/example/TabsWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/TabsWrapperDemo.vue"],
     },
     "TagsInputComboboxDemo": {
       name: "TagsInputComboboxDemo",
