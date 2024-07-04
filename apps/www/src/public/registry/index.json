@@ -197,6 +197,7 @@
       "ui/card/CardFooter.vue",
       "ui/card/CardHeader.vue",
       "ui/card/CardTitle.vue",
+      "ui/card/CardWrapper.vue",
       "ui/card/index.ts"
     ],
     "type": "components:ui"

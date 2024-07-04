@@ -414,7 +414,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Card',
           href: '/pro/wrappers/card',
-          disabled: true,
         },
         {
           title: 'Carousel',
