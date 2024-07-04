@@ -367,6 +367,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/CardWithForm.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/CardWithForm.vue"],
     },
+    "CardWrapperDemo": {
+      name: "CardWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: () => import("../src/lib/registry/default/example/CardWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/CardWrapperDemo.vue"],
+    },
     "CarouselApi": {
       name: "CarouselApi",
       type: "components:example",
@@ -1921,6 +1928,13 @@ export const Index = {
       registryDependencies: ["button", "card", "input", "label", "select"],
       component: () => import("../src/lib/registry/new-york/example/CardWithForm.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/CardWithForm.vue"],
+    },
+    "CardWrapperDemo": {
+      name: "CardWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["card","button","switch"],
+      component: () => import("../src/lib/registry/new-york/example/CardWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/CardWrapperDemo.vue"],
     },
     "CarouselApi": {
       name: "CarouselApi",

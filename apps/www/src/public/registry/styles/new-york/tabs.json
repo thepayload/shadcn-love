@@ -27,7 +27,7 @@
     },
     {
       "name": "index.ts",
-      "content": "export { default as Tabs } from './Tabs.vue'\nexport { default as TabsContent } from './TabsContent.vue'\nexport { default as TabsList } from './TabsList.vue'\nexport { default as TabsTrigger } from './TabsTrigger.vue'\n"
+      "content": "export { default as Tabs } from './Tabs.vue'\nexport { default as TabsTrigger } from './TabsTrigger.vue'\nexport { default as TabsList } from './TabsList.vue'\nexport { default as TabsContent } from './TabsContent.vue'\nexport { default as TabsWrapper } from './TabsWrapper.vue'\n"
     }
   ],
   "type": "components:ui"
