@@ -1242,6 +1242,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/TooltipDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/TooltipDemo.vue"],
     },
+    "TooltipWrapperDemo": {
+      name: "TooltipWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["button","tooltip"],
+      component: () => import("../src/lib/registry/default/example/TooltipWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/TooltipWrapperDemo.vue"],
+    },
     "TypographyBlockquote": {
       name: "TypographyBlockquote",
       type: "components:example",
@@ -2740,6 +2747,13 @@ export const Index = {
       registryDependencies: ["button","tooltip"],
       component: () => import("../src/lib/registry/new-york/example/TooltipDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/TooltipDemo.vue"],
+    },
+    "TooltipWrapperDemo": {
+      name: "TooltipWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["button","tooltip"],
+      component: () => import("../src/lib/registry/new-york/example/TooltipWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/TooltipWrapperDemo.vue"],
     },
     "TypographyBlockquote": {
       name: "TypographyBlockquote",
