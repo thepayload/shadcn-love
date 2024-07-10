@@ -743,6 +743,7 @@
       "ui/sheet/SheetHeader.vue",
       "ui/sheet/SheetTitle.vue",
       "ui/sheet/SheetTrigger.vue",
+      "ui/sheet/SheetWrapper.vue",
       "ui/sheet/index.ts"
     ],
     "type": "components:ui"

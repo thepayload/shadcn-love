@@ -983,6 +983,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/SheetSideDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/SheetSideDemo.vue"],
     },
+    "SheetWrapperDemo": {
+      name: "SheetWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["sheet","button","input","label"],
+      component: () => import("../src/lib/registry/default/example/SheetWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/SheetWrapperDemo.vue"],
+    },
     "SkeletonCard": {
       name: "SkeletonCard",
       type: "components:example",
@@ -2488,6 +2495,13 @@ export const Index = {
       registryDependencies: ["button","input","label","sheet"],
       component: () => import("../src/lib/registry/new-york/example/SheetSideDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/SheetSideDemo.vue"],
+    },
+    "SheetWrapperDemo": {
+      name: "SheetWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["sheet","button","input","label"],
+      component: () => import("../src/lib/registry/new-york/example/SheetWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/SheetWrapperDemo.vue"],
     },
     "SkeletonCard": {
       name: "SkeletonCard",
