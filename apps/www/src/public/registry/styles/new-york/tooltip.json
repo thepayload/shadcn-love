@@ -22,8 +22,12 @@
       "content": "<script setup lang=\"ts\">\nimport { TooltipTrigger, type TooltipTriggerProps } from 'radix-vue'\n\nconst props = defineProps<TooltipTriggerProps>()\n</script>\n\n<template>\n  <TooltipTrigger v-bind=\"props\">\n    <slot />\n  </TooltipTrigger>\n</template>\n"
     },
     {
+      "name": "TooltipWrapper.vue",
+      "content": "<script setup lang=\"ts\">\nimport { TooltipProvider, type TooltipProviderProps } from 'radix-vue'\n\nimport { Tooltip, TooltipContent, TooltipTrigger } from '.'\n\nexport interface TooltipProps extends TooltipProviderProps {\n  content: string\n  side?: 'top' | 'right' | 'bottom' | 'left'\n}\nconst props = defineProps<TooltipProps>()\n</script>\n\n<template>\n  <TooltipProvider v-bind=\"props\">\n    <Tooltip>\n      <TooltipTrigger as-child>\n        <slot />\n      </TooltipTrigger>\n      <TooltipContent :side=\"side\">\n        <slot name=\"content\" :content=\"content\">\n          <p>{{ content }}</p>\n        </slot>\n      </TooltipContent>\n    </Tooltip>\n  </TooltipProvider>\n</template>\n"
+    },
+    {
       "name": "index.ts",
-      "content": "export { default as Tooltip } from './Tooltip.vue'\nexport { default as TooltipContent } from './TooltipContent.vue'\nexport { default as TooltipTrigger } from './TooltipTrigger.vue'\nexport { default as TooltipProvider } from './TooltipProvider.vue'\n"
+      "content": "export { default as Tooltip } from './Tooltip.vue'\nexport { default as TooltipContent } from './TooltipContent.vue'\nexport { default as TooltipTrigger } from './TooltipTrigger.vue'\nexport { default as TooltipProvider } from './TooltipProvider.vue'\nexport { default as TooltipWrapper } from './TooltipWrapper.vue'\n"
     }
   ],
   "type": "components:ui"
