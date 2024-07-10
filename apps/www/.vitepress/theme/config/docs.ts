@@ -516,7 +516,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Sheet',
           href: '/pro/wrappers/sheet',
-          disabled: true,
         },
         {
           title: 'Sekelton',
