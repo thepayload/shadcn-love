@@ -400,7 +400,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Alert Dialog',
           href: '/pro/wrappers/alert-dialog',
-          disabled: true,
         },
         {
           title: 'Avatar',

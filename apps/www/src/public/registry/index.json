@@ -46,6 +46,7 @@
       "ui/alert-dialog/AlertDialogHeader.vue",
       "ui/alert-dialog/AlertDialogTitle.vue",
       "ui/alert-dialog/AlertDialogTrigger.vue",
+      "ui/alert-dialog/AlertDialogWrapper.vue",
       "ui/alert-dialog/index.ts"
     ],
     "type": "components:ui"
