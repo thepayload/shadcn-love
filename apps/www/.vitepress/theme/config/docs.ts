@@ -560,8 +560,7 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: 'Tooltip',
-          href: '/pro/wrappers/tootip',
-          disabled: true,
+          href: '/pro/wrappers/tooltip',
         },
       ],
     },

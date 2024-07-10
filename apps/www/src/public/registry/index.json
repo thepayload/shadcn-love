@@ -918,6 +918,7 @@
       "ui/tooltip/TooltipContent.vue",
       "ui/tooltip/TooltipProvider.vue",
       "ui/tooltip/TooltipTrigger.vue",
+      "ui/tooltip/TooltipWrapper.vue",
       "ui/tooltip/index.ts"
     ],
     "type": "components:ui"
