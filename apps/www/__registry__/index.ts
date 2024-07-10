@@ -31,6 +31,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/AlertDialogDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/AlertDialogDemo.vue"],
     },
+    "AlertDialogWrapperDemo": {
+      name: "AlertDialogWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["button","alert-dialog"],
+      component: () => import("../src/lib/registry/default/example/AlertDialogWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/AlertDialogWrapperDemo.vue"],
+    },
     "AlertWrapperDemo": {
       name: "AlertWrapperDemo",
       type: "components:example",
@@ -1592,6 +1599,13 @@ export const Index = {
       registryDependencies: ["alert-dialog", "button"],
       component: () => import("../src/lib/registry/new-york/example/AlertDialogDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/AlertDialogDemo.vue"],
+    },
+    "AlertDialogWrapperDemo": {
+      name: "AlertDialogWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["button","alert-dialog"],
+      component: () => import("../src/lib/registry/new-york/example/AlertDialogWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/AlertDialogWrapperDemo.vue"],
     },
     "AlertWrapperDemo": {
       name: "AlertWrapperDemo",
