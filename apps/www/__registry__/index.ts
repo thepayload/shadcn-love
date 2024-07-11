@@ -668,6 +668,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/DrawerDialog.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/DrawerDialog.vue"],
     },
+    "DrawerWrapperDemo": {
+      name: "DrawerWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["button","drawer"],
+      component: () => import("../src/lib/registry/default/example/DrawerWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/DrawerWrapperDemo.vue"],
+    },
     "DropdownMenuCheckboxes": {
       name: "DropdownMenuCheckboxes",
       type: "components:example",
@@ -2222,6 +2229,13 @@ export const Index = {
       registryDependencies: ["button","dialog","drawer","label","input"],
       component: () => import("../src/lib/registry/new-york/example/DrawerDialog.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/DrawerDialog.vue"],
+    },
+    "DrawerWrapperDemo": {
+      name: "DrawerWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["button","drawer"],
+      component: () => import("../src/lib/registry/new-york/example/DrawerWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/DrawerWrapperDemo.vue"],
     },
     "DropdownMenuCheckboxes": {
       name: "DropdownMenuCheckboxes",
