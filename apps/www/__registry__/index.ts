@@ -689,6 +689,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/DropdownMenuRadioGroup.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/DropdownMenuRadioGroup.vue"],
     },
+    "DropdownMenuWrapperDemo": {
+      name: "DropdownMenuWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["button","dropdown-menu"],
+      component: () => import("../src/lib/registry/default/example/DropdownMenuWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/DropdownMenuWrapperDemo.vue"],
+    },
     "HoverCardDemo": {
       name: "HoverCardDemo",
       type: "components:example",
@@ -2236,6 +2243,13 @@ export const Index = {
       registryDependencies: ["button","dropdown-menu"],
       component: () => import("../src/lib/registry/new-york/example/DropdownMenuRadioGroup.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/DropdownMenuRadioGroup.vue"],
+    },
+    "DropdownMenuWrapperDemo": {
+      name: "DropdownMenuWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["button","dropdown-menu"],
+      component: () => import("../src/lib/registry/new-york/example/DropdownMenuWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/DropdownMenuWrapperDemo.vue"],
     },
     "HoverCardDemo": {
       name: "HoverCardDemo",

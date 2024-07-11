@@ -467,7 +467,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Dropdown Menu',
           href: '/pro/wrappers/dropdown-menu',
-          disabled: true,
         },
         {
           title: 'Form',
