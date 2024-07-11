@@ -420,6 +420,7 @@
       "ui/drawer/DrawerHeader.vue",
       "ui/drawer/DrawerOverlay.vue",
       "ui/drawer/DrawerTitle.vue",
+      "ui/drawer/DrawerWrapper.vue",
       "ui/drawer/index.ts"
     ],
     "type": "components:ui"
