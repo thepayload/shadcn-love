@@ -461,7 +461,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Drawer',
           href: '/pro/wrappers/drawer',
-          disabled: true,
         },
         {
           title: 'Dropdown Menu',
