@@ -445,6 +445,7 @@
       "ui/dropdown-menu/DropdownMenuSubContent.vue",
       "ui/dropdown-menu/DropdownMenuSubTrigger.vue",
       "ui/dropdown-menu/DropdownMenuTrigger.vue",
+      "ui/dropdown-menu/DropdownMenuWrapper.vue",
       "ui/dropdown-menu/index.ts"
     ],
     "type": "components:ui"
