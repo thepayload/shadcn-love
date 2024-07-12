@@ -1,5 +1,5 @@
 ---
-title: Card wrapper
+title: Card Wrapper
 description: Displays a card with header, content, and footer.
 ---
 

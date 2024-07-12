@@ -400,6 +400,7 @@
       "ui/dialog/DialogScrollContent.vue",
       "ui/dialog/DialogTitle.vue",
       "ui/dialog/DialogTrigger.vue",
+      "ui/dialog/DialogWrapper.vue",
       "ui/dialog/index.ts"
     ],
     "type": "components:ui"
