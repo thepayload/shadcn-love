@@ -1,5 +1,5 @@
 ---
-title: Avatar wrapper
+title: Avatar Wrapper
 description: An image element with a fallback for representing the user.
 source: apps/www/src/lib/registry/default/ui/avatar
 primitive: https://www.radix-vue.com/components/avatar.html

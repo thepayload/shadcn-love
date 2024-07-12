@@ -619,6 +619,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/DialogScrollOverlayDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/DialogScrollOverlayDemo.vue"],
     },
+    "DialogWrapperDemo": {
+      name: "DialogWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["button","dialog","input","label"],
+      component: () => import("../src/lib/registry/default/example/DialogWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/DialogWrapperDemo.vue"],
+    },
     "DonutChartColor": {
       name: "DonutChartColor",
       type: "components:example",
@@ -2145,6 +2152,13 @@ export const Index = {
       registryDependencies: ["button","dialog"],
       component: () => import("../src/lib/registry/new-york/example/DialogScrollOverlayDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/DialogScrollOverlayDemo.vue"],
+    },
+    "DialogWrapperDemo": {
+      name: "DialogWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["button","dialog","input","label"],
+      component: () => import("../src/lib/registry/new-york/example/DialogWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/DialogWrapperDemo.vue"],
     },
     "DonutChartColor": {
       name: "DonutChartColor",

@@ -42,8 +42,12 @@
       "content": "<script setup lang=\"ts\">\nimport { DialogTrigger, type DialogTriggerProps } from 'radix-vue'\n\nconst props = defineProps<DialogTriggerProps>()\n</script>\n\n<template>\n  <DialogTrigger v-bind=\"props\">\n    <slot />\n  </DialogTrigger>\n</template>\n"
     },
     {
+      "name": "DialogWrapper.vue",
+      "content": "<script setup lang=\"ts\">\nimport { type DialogRootEmits, type DialogRootProps, useForwardPropsEmits } from 'radix-vue'\nimport {\n  Dialog,\n  DialogContent,\n  DialogDescription,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger\n} from '.'\n\nconst props = defineProps<\n  DialogRootProps & {\n    title?: string\n    description?: string\n  }\n>()\nconst emits = defineEmits<DialogRootEmits>()\nconst modelValue = defineModel<boolean>()\nconst forwarded = useForwardPropsEmits(props, emits)\n</script>\n\n<template>\n  <Dialog v-bind=\"forwarded\" v-model:open=\"modelValue\">\n    <DialogTrigger as-child>\n      <slot name=\"trigger\" />\n    </DialogTrigger>\n    <DialogContent>\n      <DialogHeader v-if=\"title || description\" class=\"p-6 pb-0\">\n        <DialogTitle v-if=\"title\">{{ props.title }}</DialogTitle>\n        <DialogDescription v-if=\"description\">\n          {{ props.description }}\n        </DialogDescription>\n      </DialogHeader>\n      <slot />\n    </DialogContent>\n  </Dialog>\n</template>\n"
+    },
+    {
       "name": "index.ts",
-      "content": "export { default as Dialog } from './Dialog.vue'\nexport { default as DialogClose } from './DialogClose.vue'\nexport { default as DialogTrigger } from './DialogTrigger.vue'\nexport { default as DialogHeader } from './DialogHeader.vue'\nexport { default as DialogTitle } from './DialogTitle.vue'\nexport { default as DialogDescription } from './DialogDescription.vue'\nexport { default as DialogContent } from './DialogContent.vue'\nexport { default as DialogScrollContent } from './DialogScrollContent.vue'\nexport { default as DialogFooter } from './DialogFooter.vue'\n"
+      "content": "export { default as Dialog } from './Dialog.vue'\nexport { default as DialogClose } from './DialogClose.vue'\nexport { default as DialogTrigger } from './DialogTrigger.vue'\nexport { default as DialogHeader } from './DialogHeader.vue'\nexport { default as DialogTitle } from './DialogTitle.vue'\nexport { default as DialogDescription } from './DialogDescription.vue'\nexport { default as DialogContent } from './DialogContent.vue'\nexport { default as DialogScrollContent } from './DialogScrollContent.vue'\nexport { default as DialogFooter } from './DialogFooter.vue'\nexport { default as DialogWrapper } from './DialogWrapper.vue'\n"
     }
   ],
   "type": "components:ui"
