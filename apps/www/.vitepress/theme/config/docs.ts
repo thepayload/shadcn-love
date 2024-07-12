@@ -452,7 +452,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Dialog',
           href: '/pro/wrappers/dialog',
-          disabled: true,
         },
         {
           title: 'Drawer',

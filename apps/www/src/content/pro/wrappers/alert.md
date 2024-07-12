@@ -1,5 +1,5 @@
 ---
-title: Alert wrapper
+title: Alert Wrapper
 description: Displays a callout for user attention.
 ---
 
