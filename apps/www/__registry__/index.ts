@@ -808,6 +808,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/MenubarDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/MenubarDemo.vue"],
     },
+    "MenubarWrapperDemo": {
+      name: "MenubarWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["menubar"],
+      component: () => import("../src/lib/registry/default/example/MenubarWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/MenubarWrapperDemo.vue"],
+    },
     "NavigationMenuDemo": {
       name: "NavigationMenuDemo",
       type: "components:example",
@@ -2376,6 +2383,13 @@ export const Index = {
       registryDependencies: ["menubar"],
       component: () => import("../src/lib/registry/new-york/example/MenubarDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/MenubarDemo.vue"],
+    },
+    "MenubarWrapperDemo": {
+      name: "MenubarWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["menubar"],
+      component: () => import("../src/lib/registry/new-york/example/MenubarWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/MenubarWrapperDemo.vue"],
     },
     "NavigationMenuDemo": {
       name: "NavigationMenuDemo",
