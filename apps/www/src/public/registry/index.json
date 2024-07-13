@@ -537,6 +537,8 @@
       "ui/menubar/MenubarSubContent.vue",
       "ui/menubar/MenubarSubTrigger.vue",
       "ui/menubar/MenubarTrigger.vue",
+      "ui/menubar/MenubarWrapper.vue",
+      "ui/menubar/MenubarWrapperContent.vue",
       "ui/menubar/index.ts"
     ],
     "type": "components:ui"
