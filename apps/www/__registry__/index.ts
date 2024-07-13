@@ -528,6 +528,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/ContextMenuDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/ContextMenuDemo.vue"],
     },
+    "ContextMenuWrapperDemo": {
+      name: "ContextMenuWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["context-menu"],
+      component: () => import("../src/lib/registry/default/example/ContextMenuWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/ContextMenuWrapperDemo.vue"],
+    },
     "CustomChartTooltip": {
       name: "CustomChartTooltip",
       type: "components:example",
@@ -2138,6 +2145,13 @@ export const Index = {
       registryDependencies: ["context-menu"],
       component: () => import("../src/lib/registry/new-york/example/ContextMenuDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/ContextMenuDemo.vue"],
+    },
+    "ContextMenuWrapperDemo": {
+      name: "ContextMenuWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["context-menu"],
+      component: () => import("../src/lib/registry/new-york/example/ContextMenuWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/ContextMenuWrapperDemo.vue"],
     },
     "CustomChartTooltip": {
       name: "CustomChartTooltip",

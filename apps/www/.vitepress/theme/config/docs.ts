@@ -441,7 +441,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Context Menu',
           href: '/pro/wrappers/context-menu',
-          disabled: true,
         },
         {
           title: 'Data Table',
