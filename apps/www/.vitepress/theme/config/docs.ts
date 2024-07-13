@@ -478,7 +478,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Menubar',
           href: '/pro/wrappers/menubar',
-          disabled: true,
         },
         {
           title: 'Number Field',
