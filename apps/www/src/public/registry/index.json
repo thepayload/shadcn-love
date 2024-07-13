@@ -380,6 +380,7 @@
       "ui/context-menu/ContextMenuSubContent.vue",
       "ui/context-menu/ContextMenuSubTrigger.vue",
       "ui/context-menu/ContextMenuTrigger.vue",
+      "ui/context-menu/ContextMenuWrapper.vue",
       "ui/context-menu/index.ts"
     ],
     "type": "components:ui"
