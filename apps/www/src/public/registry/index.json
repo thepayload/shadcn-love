@@ -804,11 +804,22 @@
   },
   {
     "name": "table",
-    "dependencies": [],
+    "dependencies": [
+      "@tanstack/vue-table"
+    ],
     "registryDependencies": [
-      "utils"
+      "utils",
+      "table",
+      "checkbox"
     ],
     "files": [
+      "ui/table/DataTable.vue",
+      "ui/table/DataTableColumnHeader.vue",
+      "ui/table/DataTableFacetedFilter.vue",
+      "ui/table/DataTablePagination.vue",
+      "ui/table/DataTableRowActions.vue",
+      "ui/table/DataTableToolbar.vue",
+      "ui/table/DataTableViewOptions.vue",
       "ui/table/Table.vue",
       "ui/table/TableBody.vue",
       "ui/table/TableCaption.vue",
