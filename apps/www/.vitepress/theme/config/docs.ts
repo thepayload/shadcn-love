@@ -446,7 +446,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Data Table',
           href: '/pro/wrappers/data-table',
-          disabled: true,
         },
         {
           title: 'Date Picker',
