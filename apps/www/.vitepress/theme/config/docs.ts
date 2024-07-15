@@ -472,7 +472,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Input',
           href: '/pro/wrappers/input',
-          disabled: true,
         },
         {
           title: 'Menubar',
