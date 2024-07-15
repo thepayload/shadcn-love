@@ -496,10 +496,13 @@
       "@vueuse/core"
     ],
     "registryDependencies": [
-      "utils"
+      "utils",
+      "input",
+      "form"
     ],
     "files": [
       "ui/input/Input.vue",
+      "ui/input/InputWrapper.vue",
       "ui/input/index.ts"
     ],
     "type": "components:ui"
@@ -808,9 +811,7 @@
       "@tanstack/vue-table"
     ],
     "registryDependencies": [
-      "utils",
-      "table",
-      "checkbox"
+      "utils"
     ],
     "files": [
       "ui/table/DataTable.vue",
