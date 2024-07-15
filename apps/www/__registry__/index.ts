@@ -794,6 +794,20 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/InputWithLabel.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/InputWithLabel.vue"],
     },
+    "InputWrapperDemo": {
+      name: "InputWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["input"],
+      component: () => import("../src/lib/registry/default/example/InputWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/InputWrapperDemo.vue"],
+    },
+    "InputWrapperDisabledDemo": {
+      name: "InputWrapperDisabledDemo",
+      type: "components:example",
+      registryDependencies: ["input"],
+      component: () => import("../src/lib/registry/default/example/InputWrapperDisabledDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/InputWrapperDisabledDemo.vue"],
+    },
     "LabelDemo": {
       name: "LabelDemo",
       type: "components:example",
@@ -2418,6 +2432,20 @@ export const Index = {
       registryDependencies: ["input", "label"],
       component: () => import("../src/lib/registry/new-york/example/InputWithLabel.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/InputWithLabel.vue"],
+    },
+    "InputWrapperDemo": {
+      name: "InputWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["input"],
+      component: () => import("../src/lib/registry/new-york/example/InputWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/InputWrapperDemo.vue"],
+    },
+    "InputWrapperDisabledDemo": {
+      name: "InputWrapperDisabledDemo",
+      type: "components:example",
+      registryDependencies: ["input"],
+      component: () => import("../src/lib/registry/new-york/example/InputWrapperDisabledDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/InputWrapperDisabledDemo.vue"],
     },
     "LabelDemo": {
       name: "LabelDemo",
