@@ -1214,6 +1214,20 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/TextareaWithText.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/TextareaWithText.vue"],
     },
+    "TextareaWrapperDemo": {
+      name: "TextareaWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["textarea"],
+      component: () => import("../src/lib/registry/default/example/TextareaWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/TextareaWrapperDemo.vue"],
+    },
+    "TextareaWrapperDisabled": {
+      name: "TextareaWrapperDisabled",
+      type: "components:example",
+      registryDependencies: ["textarea"],
+      component: () => import("../src/lib/registry/default/example/TextareaWrapperDisabled.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/TextareaWrapperDisabled.vue"],
+    },
     "ToastDemo": {
       name: "ToastDemo",
       type: "components:example",
@@ -2817,6 +2831,20 @@ export const Index = {
       registryDependencies: ["textarea","label"],
       component: () => import("../src/lib/registry/new-york/example/TextareaWithText.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/TextareaWithText.vue"],
+    },
+    "TextareaWrapperDemo": {
+      name: "TextareaWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["textarea"],
+      component: () => import("../src/lib/registry/new-york/example/TextareaWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/TextareaWrapperDemo.vue"],
+    },
+    "TextareaWrapperDisabled": {
+      name: "TextareaWrapperDisabled",
+      type: "components:example",
+      registryDependencies: ["textarea"],
+      component: () => import("../src/lib/registry/new-york/example/TextareaWrapperDisabled.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/TextareaWrapperDisabled.vue"],
     },
     "ToastDemo": {
       name: "ToastDemo",
