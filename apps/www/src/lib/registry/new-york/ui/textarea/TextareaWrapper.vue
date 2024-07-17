@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useVModel } from '@vueuse/core'
 import type { HTMLAttributes } from 'vue'
-import { Input } from '@/lib/registry/default/ui/input'
-import { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/lib/registry/default/ui/form'
+import { Textarea } from '@/lib/registry/new-york/ui/textarea'
+import { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/lib/registry/new-york/ui/form'
 
 const props = defineProps<{
   defaultValue?: string | number
@@ -38,7 +38,7 @@ const modelValue = useVModel(props, 'modelValue', emits, {
         <span v-if="props.required" class="text-destructive"> *</span>
       </FormLabel>
       <FormControl>
-        <Input
+        <Textarea
           v-bind="slotProps" :id="props.id" v-model="modelValue"
           :placeholder="props.placeholder" :disabled="props.disabled" :loading="props.loading" :class="props.class"
           :prefix="props.prefix" :suffix="props.suffix"
