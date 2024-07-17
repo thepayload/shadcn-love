@@ -937,10 +937,13 @@
       "@vueuse/core"
     ],
     "registryDependencies": [
-      "utils"
+      "utils",
+      "textarea",
+      "form"
     ],
     "files": [
       "ui/textarea/Textarea.vue",
+      "ui/textarea/TextareaWrapper.vue",
       "ui/textarea/index.ts"
     ],
     "type": "components:ui"
