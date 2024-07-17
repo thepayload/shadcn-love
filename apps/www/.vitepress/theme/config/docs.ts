@@ -538,7 +538,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Textarea',
           href: '/pro/wrappers/textarea',
-          disabled: true,
         },
         {
           title: 'Toggle',
