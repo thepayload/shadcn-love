@@ -1,8 +1,12 @@
 {
   "name": "number-field",
-  "dependencies": [],
+  "dependencies": [
+    "@vueuse/core"
+  ],
   "registryDependencies": [
-    "utils"
+    "utils",
+    "form",
+    "number-field"
   ],
   "files": [
     {
@@ -26,8 +30,12 @@
       "content": "<script setup lang=\"ts\">\nimport { NumberFieldInput } from 'radix-vue'\nimport { cn } from '@/lib/utils'\n</script>\n\n<template>\n  <NumberFieldInput data-slot=\"input\" :class=\"cn('flex h-10 w-full rounded-md border border-input bg-background py-2 text-sm text-center ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50')\" />\n</template>\n"
     },
     {
+      "name": "NumberFieldWrapper.vue",
+      "content": "<script setup lang=\"ts\">\nimport { useVModel } from '@vueuse/core'\nimport type { HTMLAttributes } from 'vue'\nimport { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/lib/registry/default/ui/form'\nimport {\n  NumberField,\n  NumberFieldContent,\n  NumberFieldDecrement,\n  NumberFieldIncrement,\n  NumberFieldInput,\n} from '@/lib/registry/default/ui/number-field'\n\nconst props = defineProps<{\n  defaultValue?: undefined | number\n  modelValue?: undefined | number\n  class?: HTMLAttributes['class']\n  id?: string\n  name?: string\n  label?: string\n  required?: boolean\n  placeholder?: string\n  description?: string\n  disabled?: boolean\n  loading?: boolean\n  prefix?: string\n  suffix?: string\n}>()\n\nconst emits = defineEmits<{\n  (e: 'update:modelValue', payload: string | number): void\n}>()\n\nconst modelValue = useVModel(props, 'modelValue', emits, {\n  passive: true,\n  defaultValue: props.defaultValue,\n})\n</script>\n\n<template>\n  <FormField v-slot=\"slotProps\" :name=\"props.name || ''\">\n    <FormItem v-bind=\"$attrs\">\n      <FormLabel v-if=\"props.label\">\n        {{ props.label }}\n        <span v-if=\"props.required\" class=\"text-destructive\"> *</span>\n      </FormLabel>\n      <FormControl>\n        <NumberField\n          v-bind=\"slotProps\" :id=\"props.id\"\n          v-model=\"modelValue\"\n          :min=\"0\"\n          :format-options=\"{\n            style: 'currency',\n            currency: 'EUR',\n            currencyDisplay: 'code',\n            currencySign: 'accounting',\n          }\"\n        >\n          <NumberFieldContent>\n            <NumberFieldDecrement />\n            <FormControl>\n              <NumberFieldInput :placeholder=\"props.placeholder\" :disabled=\"props.disabled\" :loading=\"props.loading\" :class=\"props.class\" />\n            </FormControl>\n            <NumberFieldIncrement />\n          </NumberFieldContent>\n        </NumberField>\n      </FormControl>\n      <FormDescription v-if=\"props.description\">\n        {{ props.description }}\n      </FormDescription>\n      <FormMessage />\n    </FormItem>\n  </FormField>\n</template>\n"
+    },
+    {
       "name": "index.ts",
-      "content": "export { default as NumberField } from './NumberField.vue'\nexport { default as NumberFieldInput } from './NumberFieldInput.vue'\nexport { default as NumberFieldIncrement } from './NumberFieldIncrement.vue'\nexport { default as NumberFieldDecrement } from './NumberFieldDecrement.vue'\nexport { default as NumberFieldContent } from './NumberFieldContent.vue'\n"
+      "content": "export { default as NumberField } from './NumberField.vue'\nexport { default as NumberFieldInput } from './NumberFieldInput.vue'\nexport { default as NumberFieldIncrement } from './NumberFieldIncrement.vue'\nexport { default as NumberFieldDecrement } from './NumberFieldDecrement.vue'\nexport { default as NumberFieldContent } from './NumberFieldContent.vue'\nexport { default as NumberFieldWrapper } from './NumberFieldWrapper.vue'\n"
     }
   ],
   "type": "components:ui"

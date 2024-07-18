@@ -892,6 +892,20 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/NumberFieldPercentage.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/NumberFieldPercentage.vue"],
     },
+    "NumberFieldWrapperDemo": {
+      name: "NumberFieldWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["number-field"],
+      component: () => import("../src/lib/registry/default/example/NumberFieldWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/NumberFieldWrapperDemo.vue"],
+    },
+    "NumberFieldWrapperDisabledDemo": {
+      name: "NumberFieldWrapperDisabledDemo",
+      type: "components:example",
+      registryDependencies: ["number-field"],
+      component: () => import("../src/lib/registry/default/example/NumberFieldWrapperDisabledDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/NumberFieldWrapperDisabledDemo.vue"],
+    },
     "PaginationDemo": {
       name: "PaginationDemo",
       type: "components:example",
@@ -2509,6 +2523,20 @@ export const Index = {
       registryDependencies: ["number-field","label"],
       component: () => import("../src/lib/registry/new-york/example/NumberFieldPercentage.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/NumberFieldPercentage.vue"],
+    },
+    "NumberFieldWrapperDemo": {
+      name: "NumberFieldWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["number-field"],
+      component: () => import("../src/lib/registry/new-york/example/NumberFieldWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/NumberFieldWrapperDemo.vue"],
+    },
+    "NumberFieldWrapperDisabledDemo": {
+      name: "NumberFieldWrapperDisabledDemo",
+      type: "components:example",
+      registryDependencies: ["number-field"],
+      component: () => import("../src/lib/registry/new-york/example/NumberFieldWrapperDisabledDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/NumberFieldWrapperDisabledDemo.vue"],
     },
     "PaginationDemo": {
       name: "PaginationDemo",
