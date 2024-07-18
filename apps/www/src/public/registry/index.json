@@ -568,9 +568,13 @@
   },
   {
     "name": "number-field",
-    "dependencies": [],
+    "dependencies": [
+      "@vueuse/core"
+    ],
     "registryDependencies": [
-      "utils"
+      "utils",
+      "form",
+      "number-field"
     ],
     "files": [
       "ui/number-field/NumberField.vue",
@@ -578,6 +582,7 @@
       "ui/number-field/NumberFieldDecrement.vue",
       "ui/number-field/NumberFieldIncrement.vue",
       "ui/number-field/NumberFieldInput.vue",
+      "ui/number-field/NumberFieldWrapper.vue",
       "ui/number-field/index.ts"
     ],
     "type": "components:ui"
