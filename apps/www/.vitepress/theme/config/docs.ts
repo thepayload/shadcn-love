@@ -479,7 +479,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Number Field',
           href: '/pro/wrappers/number-field',
-          disabled: true,
         },
         {
           title: 'Pagination',

@@ -19,7 +19,7 @@
     },
     {
       "name": "index.ts",
-      "content": "export { default as Textarea } from './Textarea.vue'\nexport { default as TextareaWrapper } from './TextareaWrapper.vue'"
+      "content": "export { default as Textarea } from './Textarea.vue'\nexport { default as TextareaWrapper } from './TextareaWrapper.vue'\n"
     }
   ],
   "type": "components:ui"
