@@ -717,6 +717,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/DropdownMenuWrapperDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/DropdownMenuWrapperDemo.vue"],
     },
+    "FullCalendarDemo": {
+      name: "FullCalendarDemo",
+      type: "components:example",
+      registryDependencies: ["full-calendar"],
+      component: () => import("../src/lib/registry/default/example/FullCalendarDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/FullCalendarDemo.vue"],
+    },
     "HoverCardDemo": {
       name: "HoverCardDemo",
       type: "components:example",
@@ -884,6 +891,20 @@ export const Index = {
       registryDependencies: ["number-field","label"],
       component: () => import("../src/lib/registry/default/example/NumberFieldPercentage.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/NumberFieldPercentage.vue"],
+    },
+    "NumberFieldWrapperDemo": {
+      name: "NumberFieldWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["number-field"],
+      component: () => import("../src/lib/registry/default/example/NumberFieldWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/NumberFieldWrapperDemo.vue"],
+    },
+    "NumberFieldWrapperDisabledDemo": {
+      name: "NumberFieldWrapperDisabledDemo",
+      type: "components:example",
+      registryDependencies: ["number-field"],
+      component: () => import("../src/lib/registry/default/example/NumberFieldWrapperDisabledDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/NumberFieldWrapperDisabledDemo.vue"],
     },
     "PaginationDemo": {
       name: "PaginationDemo",
@@ -2300,6 +2321,13 @@ export const Index = {
       component: () => import("../src/lib/registry/new-york/example/DropdownMenuWrapperDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/DropdownMenuWrapperDemo.vue"],
     },
+    "FullCalendarDemo": {
+      name: "FullCalendarDemo",
+      type: "components:example",
+      registryDependencies: ["full-calendar"],
+      component: () => import("../src/lib/registry/new-york/example/FullCalendarDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/FullCalendarDemo.vue"],
+    },
     "HoverCardDemo": {
       name: "HoverCardDemo",
       type: "components:example",
@@ -2467,6 +2495,20 @@ export const Index = {
       registryDependencies: ["number-field","label"],
       component: () => import("../src/lib/registry/new-york/example/NumberFieldPercentage.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/NumberFieldPercentage.vue"],
+    },
+    "NumberFieldWrapperDemo": {
+      name: "NumberFieldWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["number-field"],
+      component: () => import("../src/lib/registry/new-york/example/NumberFieldWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/NumberFieldWrapperDemo.vue"],
+    },
+    "NumberFieldWrapperDisabledDemo": {
+      name: "NumberFieldWrapperDisabledDemo",
+      type: "components:example",
+      registryDependencies: ["number-field"],
+      component: () => import("../src/lib/registry/new-york/example/NumberFieldWrapperDisabledDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/NumberFieldWrapperDisabledDemo.vue"],
     },
     "PaginationDemo": {
       name: "PaginationDemo",

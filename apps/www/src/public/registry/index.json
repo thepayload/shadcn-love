@@ -477,6 +477,30 @@
     "type": "components:ui"
   },
   {
+    "name": "full-calendar",
+    "dependencies": [],
+    "registryDependencies": [
+      "utils",
+      "button"
+    ],
+    "files": [
+      "ui/full-calendar/Calendar.vue",
+      "ui/full-calendar/CalendarCell.vue",
+      "ui/full-calendar/CalendarCellTrigger.vue",
+      "ui/full-calendar/CalendarGrid.vue",
+      "ui/full-calendar/CalendarGridBody.vue",
+      "ui/full-calendar/CalendarGridHead.vue",
+      "ui/full-calendar/CalendarGridRow.vue",
+      "ui/full-calendar/CalendarHeadCell.vue",
+      "ui/full-calendar/CalendarHeader.vue",
+      "ui/full-calendar/CalendarHeading.vue",
+      "ui/full-calendar/CalendarNextButton.vue",
+      "ui/full-calendar/CalendarPrevButton.vue",
+      "ui/full-calendar/index.ts"
+    ],
+    "type": "components:ui"
+  },
+  {
     "name": "hover-card",
     "dependencies": [],
     "registryDependencies": [
@@ -568,9 +592,13 @@
   },
   {
     "name": "number-field",
-    "dependencies": [],
+    "dependencies": [
+      "@vueuse/core"
+    ],
     "registryDependencies": [
-      "utils"
+      "utils",
+      "form",
+      "number-field"
     ],
     "files": [
       "ui/number-field/NumberField.vue",
@@ -578,6 +606,7 @@
       "ui/number-field/NumberFieldDecrement.vue",
       "ui/number-field/NumberFieldIncrement.vue",
       "ui/number-field/NumberFieldInput.vue",
+      "ui/number-field/NumberFieldWrapper.vue",
       "ui/number-field/index.ts"
     ],
     "type": "components:ui"

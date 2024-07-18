@@ -465,6 +465,10 @@ export const docsConfig: DocsConfig = {
           disabled: true,
         },
         {
+          title: 'Full Calendar',
+          href: '/pro/wrappers/full-calendar',
+        },
+        {
           title: 'Input',
           href: '/pro/wrappers/input',
         },
@@ -475,7 +479,6 @@ export const docsConfig: DocsConfig = {
         {
           title: 'Number Field',
           href: '/pro/wrappers/number-field',
-          disabled: true,
         },
         {
           title: 'Pagination',
