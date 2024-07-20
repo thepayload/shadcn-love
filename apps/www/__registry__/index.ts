@@ -1326,6 +1326,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/ToggleSmallDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/ToggleSmallDemo.vue"],
     },
+    "ToggleWrapperDemo": {
+      name: "ToggleWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["toggle"],
+      component: () => import("../src/lib/registry/default/example/ToggleWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/ToggleWrapperDemo.vue"],
+    },
     "TooltipDemo": {
       name: "TooltipDemo",
       type: "components:example",
@@ -2922,6 +2929,13 @@ export const Index = {
       registryDependencies: ["toggle"],
       component: () => import("../src/lib/registry/new-york/example/ToggleSmallDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/ToggleSmallDemo.vue"],
+    },
+    "ToggleWrapperDemo": {
+      name: "ToggleWrapperDemo",
+      type: "components:example",
+      registryDependencies: ["toggle"],
+      component: () => import("../src/lib/registry/new-york/example/ToggleWrapperDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/ToggleWrapperDemo.vue"],
     },
     "TooltipDemo": {
       name: "TooltipDemo",

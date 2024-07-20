@@ -910,12 +910,17 @@
   },
   {
     "name": "toggle",
-    "dependencies": [],
+    "dependencies": [
+      "@vueuse/core"
+    ],
     "registryDependencies": [
-      "utils"
+      "utils",
+      "toggle",
+      "form"
     ],
     "files": [
       "ui/toggle/Toggle.vue",
+      "ui/toggle/ToggleWrapper.vue",
       "ui/toggle/index.ts"
     ],
     "type": "components:ui"

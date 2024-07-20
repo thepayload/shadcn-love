@@ -540,8 +540,7 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: 'Toggle',
-          href: '/pro/wrappers/toogle',
-          disabled: true,
+          href: '/pro/wrappers/toggle',
         },
         {
           title: 'Toggle Group',
