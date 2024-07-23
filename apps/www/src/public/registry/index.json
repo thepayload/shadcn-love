@@ -477,6 +477,38 @@
     "type": "components:ui"
   },
   {
+    "name": "full-calendar",
+    "dependencies": [],
+    "registryDependencies": [
+      "utils",
+      "dialog",
+      "button",
+      "toggle-group",
+      "tooltip",
+      "hover-card"
+    ],
+    "files": [
+      "ui/full-calendar/Calendar.vue",
+      "ui/full-calendar/CalendarActions.vue",
+      "ui/full-calendar/CalendarCell.vue",
+      "ui/full-calendar/CalendarCellEvent.vue",
+      "ui/full-calendar/CalendarCellEvents.vue",
+      "ui/full-calendar/CalendarCellTrigger.vue",
+      "ui/full-calendar/CalendarGrid.vue",
+      "ui/full-calendar/CalendarGridBody.vue",
+      "ui/full-calendar/CalendarGridHead.vue",
+      "ui/full-calendar/CalendarGridRow.vue",
+      "ui/full-calendar/CalendarHeadCell.vue",
+      "ui/full-calendar/CalendarHeader.vue",
+      "ui/full-calendar/CalendarHeading.vue",
+      "ui/full-calendar/CalendarNextButton.vue",
+      "ui/full-calendar/CalendarPrevButton.vue",
+      "ui/full-calendar/index.ts",
+      "ui/full-calendar/useCalendarEvents.ts"
+    ],
+    "type": "components:ui"
+  },
+  {
     "name": "hover-card",
     "dependencies": [],
     "registryDependencies": [

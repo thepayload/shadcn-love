@@ -469,6 +469,10 @@ export const docsConfig: DocsConfig = {
           disabled: true,
         },
         {
+          title: 'Full Calendar',
+          href: '/pro/wrappers/full-calendar',
+        },
+        {
           title: 'Input',
           href: '/pro/wrappers/input',
         },
