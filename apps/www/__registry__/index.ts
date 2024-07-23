@@ -724,6 +724,13 @@ export const Index = {
       component: () => import("../src/lib/registry/default/example/DropdownMenuWrapperDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/DropdownMenuWrapperDemo.vue"],
     },
+    "FullCalendarDemo": {
+      name: "FullCalendarDemo",
+      type: "components:example",
+      registryDependencies: ["full-calendar"],
+      component: () => import("../src/lib/registry/default/example/FullCalendarDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/default/example/FullCalendarDemo.vue"],
+    },
     "HoverCardDemo": {
       name: "HoverCardDemo",
       type: "components:example",
@@ -2355,6 +2362,13 @@ export const Index = {
       registryDependencies: ["button","dropdown-menu"],
       component: () => import("../src/lib/registry/new-york/example/DropdownMenuWrapperDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/DropdownMenuWrapperDemo.vue"],
+    },
+    "FullCalendarDemo": {
+      name: "FullCalendarDemo",
+      type: "components:example",
+      registryDependencies: ["full-calendar"],
+      component: () => import("../src/lib/registry/new-york/example/FullCalendarDemo.vue").then((m) => m.default),
+      files: ["../src/lib/registry/new-york/example/FullCalendarDemo.vue"],
     },
     "HoverCardDemo": {
       name: "HoverCardDemo",
