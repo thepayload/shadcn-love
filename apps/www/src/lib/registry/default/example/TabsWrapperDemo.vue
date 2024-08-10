@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import {
   TabsWrapper,
-} from '@/lib/registry/default/ui/tabs'
+} from '@/lib/registry/default/ui/wrapper'
 import {
   Button,
 } from '@/lib/registry/default/ui/button'

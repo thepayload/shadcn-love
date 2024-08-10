@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useForwardPropsEmits } from 'radix-vue'
 import type { TabsRootEmits, TabsRootProps } from 'radix-vue'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '.'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/lib/registry/new-york/ui/tabs'
 
 const props = defineProps<
   TabsRootProps & {

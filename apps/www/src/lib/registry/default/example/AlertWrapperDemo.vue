@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Terminal } from 'lucide-vue-next'
-import { AlertWrapper } from '@/lib/registry/default/ui/alert'
+import { AlertWrapper } from '@/lib/registry/default/ui/wrapper'
 </script>
 
 <template>

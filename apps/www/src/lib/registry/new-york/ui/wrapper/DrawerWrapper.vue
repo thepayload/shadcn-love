@@ -8,7 +8,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from '.'
+} from '@/lib/registry/new-york/ui/drawer'
 
 const props = withDefaults(
   defineProps<

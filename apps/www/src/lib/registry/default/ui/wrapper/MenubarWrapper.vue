@@ -4,8 +4,10 @@ import {
   MenubarContent,
   MenubarMenu,
   MenubarTrigger,
+} from '@/lib/registry/default/ui/menubar'
+import {
   MenubarWrapperContent,
-} from '.'
+} from '@/lib/registry/default/ui/wrapper'
 
 interface Menu {
   label: string

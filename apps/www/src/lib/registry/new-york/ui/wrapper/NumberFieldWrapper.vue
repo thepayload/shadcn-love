@@ -47,7 +47,6 @@ const modelValue = useVModel(props, 'modelValue', emits, {
         <NumberField
           v-bind="slotProps" :id="props.id"
           v-model="modelValue"
-          class="gap-2"
           :min="0"
           :format-options="{
             style: 'currency',

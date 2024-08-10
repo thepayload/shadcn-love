@@ -9,8 +9,10 @@ import {
   DrawerClose,
   DrawerContent,
   DrawerFooter,
-  DrawerWrapper,
 } from '@/lib/registry/default/ui/drawer'
+import {
+  DrawerWrapper,
+} from '@/lib/registry/default/ui/wrapper'
 
 const goal = ref(350)
 

@@ -6,7 +6,7 @@ import {
   SheetDescription,
   SheetHeader,
   SheetTitle,
-} from '.'
+} from '@/lib/registry/default/ui/sheet'
 
 const props = withDefaults(
   defineProps<

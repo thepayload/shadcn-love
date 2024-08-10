@@ -16,7 +16,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from '.'
+} from '@/lib/registry/new-york/ui/context-menu'
 
 interface MenuItem {
   label: string
@@ -57,7 +57,7 @@ const forwarded = useForwardPropsEmits(props, emits)
       </slot>
     </ContextMenuTrigger>
     <ContextMenuContent class="w-64">
-      <template v-for="item in items" :key="item">
+      <template v-for="item in items" :key="item.label">
         <ContextMenuSub v-if="item.items?.length > 0">
           <ContextMenuSubTrigger :inset="isInset || item.inset">
             {{ item.label }}

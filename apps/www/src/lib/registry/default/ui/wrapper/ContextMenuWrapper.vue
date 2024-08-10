@@ -16,7 +16,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from '.'
+} from '@/lib/registry/default/ui/context-menu'
 
 interface MenuItem {
   label: string

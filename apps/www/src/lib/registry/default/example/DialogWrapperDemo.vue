@@ -3,8 +3,11 @@ import { ref } from 'vue'
 import { Button } from '@/lib/registry/default/ui/button'
 import {
   DialogFooter,
-  DialogWrapper,
 } from '@/lib/registry/default/ui/dialog'
+import {
+  DialogWrapper,
+} from '@/lib/registry/default/ui/wrapper'
+
 import { Input } from '@/lib/registry/default/ui/input'
 import { Label } from '@/lib/registry/default/ui/label'
 

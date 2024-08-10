@@ -30,12 +30,8 @@
       "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { cn } from '@/lib/utils'\n\nconst props = defineProps<{\n  class?: HTMLAttributes['class']\n}>()\n</script>\n\n<template>\n  <h3\n    :class=\"\n      cn('text-2xl font-semibold leading-none tracking-tight', props.class)\n    \"\n  >\n    <slot />\n  </h3>\n</template>\n"
     },
     {
-      "name": "CardWrapper.vue",
-      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from '.'\n\nconst props = defineProps<{\n  class?: HTMLAttributes['class']\n  title?: string\n  description?: string\n}>()\n</script>\n\n<template>\n  <Card :class=\"props.class\">\n    <slot name=\"header\" :title=\"title\" :description=\"description\">\n      <CardHeader v-if=\"props.title || props.description\">\n        <CardTitle v-if=\"props.title\">\n          {{ props.title }}\n        </CardTitle>\n        <CardDescription v-if=\"props.description\">\n          {{ props.description }}\n        </CardDescription>\n      </CardHeader>\n    </slot>\n    <CardContent>\n      <slot />\n    </CardContent>\n    <CardFooter v-if=\"$slots.footer\">\n      <slot name=\"footer\" />\n    </CardFooter>\n  </Card>\n</template>\n"
-    },
-    {
       "name": "index.ts",
-      "content": "export { default as Card } from './Card.vue'\nexport { default as CardHeader } from './CardHeader.vue'\nexport { default as CardTitle } from './CardTitle.vue'\nexport { default as CardDescription } from './CardDescription.vue'\nexport { default as CardContent } from './CardContent.vue'\nexport { default as CardFooter } from './CardFooter.vue'\nexport { default as CardWrapper } from './CardWrapper.vue'\n"
+      "content": "export { default as Card } from './Card.vue'\nexport { default as CardHeader } from './CardHeader.vue'\nexport { default as CardTitle } from './CardTitle.vue'\nexport { default as CardDescription } from './CardDescription.vue'\nexport { default as CardContent } from './CardContent.vue'\nexport { default as CardFooter } from './CardFooter.vue'\n"
     }
   ],
   "type": "components:ui"

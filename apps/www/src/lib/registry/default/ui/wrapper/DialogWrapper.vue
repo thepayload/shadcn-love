@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '.'
+} from '@/lib/registry/default/ui/dialog'
 
 const props = defineProps<
   DialogRootProps & {

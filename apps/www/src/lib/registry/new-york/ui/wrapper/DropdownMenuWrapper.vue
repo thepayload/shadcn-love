@@ -12,7 +12,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from '.'
+} from '@/lib/registry/new-york/ui/dropdown-menu'
 
 interface MenuItem {
   icon: any

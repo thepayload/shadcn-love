@@ -797,7 +797,7 @@ export const Index = {
     "InputWrapperDemo": {
       name: "InputWrapperDemo",
       type: "components:example",
-      registryDependencies: ["input"],
+      registryDependencies: ["wrapper"],
       component: () => import("../src/lib/registry/default/example/InputWrapperDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/default/example/InputWrapperDemo.vue"],
     },
@@ -2436,7 +2436,7 @@ export const Index = {
     "InputWrapperDemo": {
       name: "InputWrapperDemo",
       type: "components:example",
-      registryDependencies: ["input"],
+      registryDependencies: ["wrapper"],
       component: () => import("../src/lib/registry/new-york/example/InputWrapperDemo.vue").then((m) => m.default),
       files: ["../src/lib/registry/new-york/example/InputWrapperDemo.vue"],
     },

@@ -4,8 +4,10 @@ import {
   MenubarContent,
   MenubarMenu,
   MenubarTrigger,
+} from '@/lib/registry/new-york/ui/menubar'
+import {
   MenubarWrapperContent,
-} from '.'
+} from '@/lib/registry/new-york/ui/wrapper'
 
 interface Menu {
   label: string

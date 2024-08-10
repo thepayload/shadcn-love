@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
-import { type AvatarVariants, avatarVariant } from '.'
-import { Avatar, AvatarFallback, AvatarImage } from '.'
+import { type AvatarVariants, avatarVariant } from '@/lib/registry/new-york/ui/avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '@/lib/registry/new-york/ui/avatar'
 import { cn } from '@/lib/utils'
 
 const props = withDefaults(

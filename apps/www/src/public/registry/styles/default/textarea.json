@@ -4,9 +4,7 @@
     "@vueuse/core"
   ],
   "registryDependencies": [
-    "utils",
-    "textarea",
-    "form"
+    "utils"
   ],
   "files": [
     {
@@ -14,12 +12,8 @@
       "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { useVModel } from '@vueuse/core'\nimport { cn } from '@/lib/utils'\n\nconst props = defineProps<{\n  class?: HTMLAttributes['class']\n  defaultValue?: string | number\n  modelValue?: string | number\n}>()\n\nconst emits = defineEmits<{\n  (e: 'update:modelValue', payload: string | number): void\n}>()\n\nconst modelValue = useVModel(props, 'modelValue', emits, {\n  passive: true,\n  defaultValue: props.defaultValue,\n})\n</script>\n\n<template>\n  <textarea v-model=\"modelValue\" :class=\"cn('flex min-h-20 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50', props.class)\" />\n</template>\n"
     },
     {
-      "name": "TextareaWrapper.vue",
-      "content": "<script setup lang=\"ts\">\nimport { useVModel } from '@vueuse/core'\nimport type { HTMLAttributes } from 'vue'\nimport { Textarea } from '@/lib/registry/default/ui/textarea'\nimport { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/lib/registry/default/ui/form'\n\nconst props = defineProps<{\n  defaultValue?: string | number\n  modelValue?: string | number\n  class?: HTMLAttributes['class']\n  id?: string\n  name?: string\n  label?: string\n  required?: boolean\n  placeholder?: string\n  description?: string\n  disabled?: boolean\n  loading?: boolean\n  prefix?: string\n  suffix?: string\n}>()\n\nconst emits = defineEmits<{\n  (e: 'update:modelValue', payload: string | number): void\n}>()\n\nconst modelValue = useVModel(props, 'modelValue', emits, {\n  passive: true,\n  defaultValue: props.defaultValue,\n})\n</script>\n\n<template>\n  <FormField v-slot=\"slotProps\" :name=\"props.name || ''\">\n    <FormItem v-bind=\"$attrs\">\n      <FormLabel v-if=\"props.label\">\n        {{ props.label }}\n        <span v-if=\"props.required\" class=\"text-destructive\"> *</span>\n      </FormLabel>\n      <FormControl>\n        <Textarea\n          v-bind=\"slotProps\" :id=\"props.id\" v-model=\"modelValue\"\n          :placeholder=\"props.placeholder\" :disabled=\"props.disabled\" :loading=\"props.loading\" :class=\"props.class\"\n          :prefix=\"props.prefix\" :suffix=\"props.suffix\"\n        />\n      </FormControl>\n      <FormDescription v-if=\"props.description\">\n        {{ props.description }}\n      </FormDescription>\n      <FormMessage />\n    </FormItem>\n  </FormField>\n</template>\n"
-    },
-    {
       "name": "index.ts",
-      "content": "export { default as Textarea } from './Textarea.vue'\nexport { default as TextareaWrapper } from './TextareaWrapper.vue'\n"
+      "content": "export { default as Textarea } from './Textarea.vue'\n"
     }
   ],
   "type": "components:ui"

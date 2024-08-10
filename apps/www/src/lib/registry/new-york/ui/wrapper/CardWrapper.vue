@@ -7,7 +7,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '.'
+} from '@/lib/registry/new-york/ui/card'
 
 const props = defineProps<{
   class?: HTMLAttributes['class']

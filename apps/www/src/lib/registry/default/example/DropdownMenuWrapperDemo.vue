@@ -13,7 +13,7 @@ import {
 } from 'lucide-vue-next'
 
 import { Button } from '@/lib/registry/default/ui/button'
-import { DropdownMenuWrapper } from '@/lib/registry/default/ui/dropdown-menu'
+import { DropdownMenuWrapper } from '@/lib/registry/default/ui/wrapper'
 
 const menus = [
   [

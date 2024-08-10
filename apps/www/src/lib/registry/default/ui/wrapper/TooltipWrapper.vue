@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { TooltipProvider, type TooltipProviderProps } from 'radix-vue'
 
-import { Tooltip, TooltipContent, TooltipTrigger } from '.'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/lib/registry/default/ui/tooltip'
 
 export interface TooltipProps extends TooltipProviderProps {
   content: string

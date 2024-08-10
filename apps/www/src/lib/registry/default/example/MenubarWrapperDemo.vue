@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MenubarWrapper } from '@/lib/registry/default/ui/menubar'
+import { MenubarWrapper } from '@/lib/registry/default/ui/wrapper'
 
 const menus = [
   {

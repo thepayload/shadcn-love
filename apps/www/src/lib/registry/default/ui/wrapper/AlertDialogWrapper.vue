@@ -10,7 +10,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from '.'
+} from '@/lib/registry/default/ui/alert-dialog'
 
 const props = withDefaults(
   defineProps<

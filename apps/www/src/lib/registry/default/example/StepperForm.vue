@@ -62,14 +62,12 @@ const steps = [
 const canGoNext = computed(() => stepIndex.value < steps.length)
 const canGoBack = computed(() => stepIndex.value > 1)
 function goNext() {
-  if (get(canGoNext)) {
+  if (get(canGoNext))
     set(stepIndex, stepIndex.value + 1)
-  }
 }
 function goBack() {
-  if (get(canGoBack)) {
+  if (get(canGoBack))
     set(stepIndex, stepIndex.value - 1)
-  }
 }
 
 function onSubmit(values: any) {

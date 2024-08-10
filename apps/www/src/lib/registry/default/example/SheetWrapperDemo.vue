@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import {
   SheetWrapper,
-} from '@/lib/registry/default/ui/sheet'
+} from '@/lib/registry/default/ui/wrapper'
 import { Button } from '@/lib/registry/default/ui/button'
 import { Input } from '@/lib/registry/default/ui/input'
 import { Label } from '@/lib/registry/default/ui/label'

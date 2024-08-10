@@ -9,7 +9,7 @@ import {
   MenubarSub,
   MenubarSubContent,
   MenubarSubTrigger,
-} from '.'
+} from '@/lib/registry/default/ui/menubar'
 
 interface Menu {
   label: string

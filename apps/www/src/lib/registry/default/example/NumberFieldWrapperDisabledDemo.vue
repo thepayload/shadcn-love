@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { NumberFieldWrapper } from '@/lib/registry/default/ui/number-field'
+import { NumberFieldWrapper } from '@/lib/registry/default/ui/wrapper'
 
 const total = ref(0)
 </script>
