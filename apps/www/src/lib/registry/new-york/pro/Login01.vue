@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import Logo from '@/components/brand/Logo.vue'
+import { Button } from '@/lib/registry/new-york/ui/button'
 import {
   Card,
   CardContent,
@@ -16,7 +17,6 @@ import {
   FormMessage,
 } from '@/lib/registry/new-york/ui/form'
 import { Input } from '@/lib/registry/new-york/ui/input'
-import { Button } from '@/lib/registry/new-york/ui/button'
 import { Separator } from '@/lib/registry/new-york/ui/separator'
 </script>
 

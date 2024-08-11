@@ -7,7 +7,6 @@ import type {
 } from '@tanstack/vue-table'
 import { Button } from '@/lib/registry/default/ui/button'
 import { Checkbox } from '@/lib/registry/default/ui/checkbox'
-
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -24,6 +23,7 @@ import {
   TableRow,
 } from '@/lib/registry/default/ui/table'
 import { cn, valueUpdater } from '@/lib/utils'
+
 import {
   createColumnHelper,
   FlexRender,

@@ -2,8 +2,8 @@
 import { Button } from '@/lib/registry/new-york/ui/button'
 import { Input } from '@/lib/registry/new-york/ui/input'
 import { Label } from '@/lib/registry/new-york/ui/label'
-
 import { cn } from '@/lib/utils'
+
 import LucideSpinner from '~icons/lucide/loader-2'
 import GitHubLogo from '~icons/radix-icons/github-logo'
 import { ref } from 'vue'

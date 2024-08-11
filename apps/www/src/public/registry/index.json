@@ -24,7 +24,6 @@
       "ui/alert/Alert.vue",
       "ui/alert/AlertDescription.vue",
       "ui/alert/AlertTitle.vue",
-      "ui/alert/AlertWrapper.vue",
       "ui/alert/index.ts"
     ],
     "type": "components:ui"
@@ -46,7 +45,6 @@
       "ui/alert-dialog/AlertDialogHeader.vue",
       "ui/alert-dialog/AlertDialogTitle.vue",
       "ui/alert-dialog/AlertDialogTrigger.vue",
-      "ui/alert-dialog/AlertDialogWrapper.vue",
       "ui/alert-dialog/index.ts"
     ],
     "type": "components:ui"
@@ -114,7 +112,6 @@
       "ui/avatar/Avatar.vue",
       "ui/avatar/AvatarFallback.vue",
       "ui/avatar/AvatarImage.vue",
-      "ui/avatar/AvatarWrapper.vue",
       "ui/avatar/index.ts"
     ],
     "type": "components:ui"
@@ -198,7 +195,6 @@
       "ui/card/CardFooter.vue",
       "ui/card/CardHeader.vue",
       "ui/card/CardTitle.vue",
-      "ui/card/CardWrapper.vue",
       "ui/card/index.ts"
     ],
     "type": "components:ui"
@@ -380,7 +376,6 @@
       "ui/context-menu/ContextMenuSubContent.vue",
       "ui/context-menu/ContextMenuSubTrigger.vue",
       "ui/context-menu/ContextMenuTrigger.vue",
-      "ui/context-menu/ContextMenuWrapper.vue",
       "ui/context-menu/index.ts"
     ],
     "type": "components:ui"
@@ -401,7 +396,6 @@
       "ui/dialog/DialogScrollContent.vue",
       "ui/dialog/DialogTitle.vue",
       "ui/dialog/DialogTrigger.vue",
-      "ui/dialog/DialogWrapper.vue",
       "ui/dialog/index.ts"
     ],
     "type": "components:ui"
@@ -422,7 +416,6 @@
       "ui/drawer/DrawerHeader.vue",
       "ui/drawer/DrawerOverlay.vue",
       "ui/drawer/DrawerTitle.vue",
-      "ui/drawer/DrawerWrapper.vue",
       "ui/drawer/index.ts"
     ],
     "type": "components:ui"
@@ -448,7 +441,6 @@
       "ui/dropdown-menu/DropdownMenuSubContent.vue",
       "ui/dropdown-menu/DropdownMenuSubTrigger.vue",
       "ui/dropdown-menu/DropdownMenuTrigger.vue",
-      "ui/dropdown-menu/DropdownMenuWrapper.vue",
       "ui/dropdown-menu/index.ts"
     ],
     "type": "components:ui"
@@ -528,13 +520,10 @@
       "@vueuse/core"
     ],
     "registryDependencies": [
-      "utils",
-      "input",
-      "form"
+      "utils"
     ],
     "files": [
       "ui/input/Input.vue",
-      "ui/input/InputWrapper.vue",
       "ui/input/index.ts"
     ],
     "type": "components:ui"
@@ -573,8 +562,6 @@
       "ui/menubar/MenubarSubContent.vue",
       "ui/menubar/MenubarSubTrigger.vue",
       "ui/menubar/MenubarTrigger.vue",
-      "ui/menubar/MenubarWrapper.vue",
-      "ui/menubar/MenubarWrapperContent.vue",
       "ui/menubar/index.ts"
     ],
     "type": "components:ui"
@@ -600,13 +587,9 @@
   },
   {
     "name": "number-field",
-    "dependencies": [
-      "@vueuse/core"
-    ],
+    "dependencies": [],
     "registryDependencies": [
-      "utils",
-      "form",
-      "number-field"
+      "utils"
     ],
     "files": [
       "ui/number-field/NumberField.vue",
@@ -614,7 +597,6 @@
       "ui/number-field/NumberFieldDecrement.vue",
       "ui/number-field/NumberFieldIncrement.vue",
       "ui/number-field/NumberFieldInput.vue",
-      "ui/number-field/NumberFieldWrapper.vue",
       "ui/number-field/index.ts"
     ],
     "type": "components:ui"
@@ -789,7 +771,6 @@
       "ui/sheet/SheetHeader.vue",
       "ui/sheet/SheetTitle.vue",
       "ui/sheet/SheetTrigger.vue",
-      "ui/sheet/SheetWrapper.vue",
       "ui/sheet/index.ts"
     ],
     "type": "components:ui"
@@ -947,7 +928,6 @@
       "ui/tabs/TabsContent.vue",
       "ui/tabs/TabsList.vue",
       "ui/tabs/TabsTrigger.vue",
-      "ui/tabs/TabsWrapper.vue",
       "ui/tabs/index.ts"
     ],
     "type": "components:ui"
@@ -974,13 +954,10 @@
       "@vueuse/core"
     ],
     "registryDependencies": [
-      "utils",
-      "textarea",
-      "form"
+      "utils"
     ],
     "files": [
       "ui/textarea/Textarea.vue",
-      "ui/textarea/TextareaWrapper.vue",
       "ui/textarea/index.ts"
     ],
     "type": "components:ui"
@@ -1042,7 +1019,6 @@
       "ui/tooltip/TooltipContent.vue",
       "ui/tooltip/TooltipProvider.vue",
       "ui/tooltip/TooltipTrigger.vue",
-      "ui/tooltip/TooltipWrapper.vue",
       "ui/tooltip/index.ts"
     ],
     "type": "components:ui"
@@ -1060,6 +1036,52 @@
     "files": [
       "ui/v-calendar/Calendar.vue",
       "ui/v-calendar/index.ts"
+    ],
+    "type": "components:ui"
+  },
+  {
+    "name": "wrapper",
+    "dependencies": [
+      "vaul-vue",
+      "@vueuse/core"
+    ],
+    "registryDependencies": [
+      "alert-dialog",
+      "alert",
+      "utils",
+      "avatar",
+      "card",
+      "context-menu",
+      "dialog",
+      "drawer",
+      "dropdown-menu",
+      "input",
+      "form",
+      "menubar",
+      "number-field",
+      "sheet",
+      "tabs",
+      "textarea",
+      "tooltip"
+    ],
+    "files": [
+      "ui/wrapper/AlertDialogWrapper.vue",
+      "ui/wrapper/AlertWrapper.vue",
+      "ui/wrapper/AvatarWrapper.vue",
+      "ui/wrapper/CardWrapper.vue",
+      "ui/wrapper/ContextMenuWrapper.vue",
+      "ui/wrapper/DialogWrapper.vue",
+      "ui/wrapper/DrawerWrapper.vue",
+      "ui/wrapper/DropdownMenuWrapper.vue",
+      "ui/wrapper/InputWrapper.vue",
+      "ui/wrapper/MenubarWrapper.vue",
+      "ui/wrapper/MenubarWrapperContent.vue",
+      "ui/wrapper/NumberFieldWrapper.vue",
+      "ui/wrapper/SheetWrapper.vue",
+      "ui/wrapper/TabsWrapper.vue",
+      "ui/wrapper/TextareaWrapper.vue",
+      "ui/wrapper/TooltipWrapper.vue",
+      "ui/wrapper/index.ts"
     ],
     "type": "components:ui"
   }

@@ -3,11 +3,11 @@ import { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessa
 import { Button } from '@/lib/registry/new-york/ui/button'
 import { Checkbox } from '@/lib/registry/new-york/ui/checkbox'
 import { Separator } from '@/lib/registry/new-york/ui/separator'
-
 import { toast } from '@/lib/registry/new-york/ui/toast'
 import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { h } from 'vue'
+
 import * as z from 'zod'
 
 const items = [

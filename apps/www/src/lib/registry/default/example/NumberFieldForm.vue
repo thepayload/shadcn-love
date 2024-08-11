@@ -16,7 +16,6 @@ import {
   NumberFieldInput,
 } from '@/lib/registry/default/ui/number-field'
 import { toast } from '@/lib/registry/default/ui/toast'
-
 import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { h } from 'vue'

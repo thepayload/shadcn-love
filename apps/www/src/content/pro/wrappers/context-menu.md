@@ -25,8 +25,8 @@ npx shadcn-vue@latest add wrapper-context-menu
 
 ```vue
 <script setup lang="ts">
-import { useForwardPropsEmits } from 'radix-vue'
 import type { ContextMenuRootEmits, ContextMenuRootProps } from 'radix-vue'
+import { useForwardPropsEmits } from 'radix-vue'
 import { computed } from 'vue'
 import {
   ContextMenu,

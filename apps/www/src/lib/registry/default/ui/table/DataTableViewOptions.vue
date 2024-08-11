@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import type { Table } from '@tanstack/vue-table'
 import { SlidersHorizontal } from 'lucide-vue-next'
+import { computed } from 'vue'
 
+import { Button } from '../button'
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -11,7 +12,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '../dropdown-menu'
-import { Button } from '../button'
 
 interface DataTableViewOptionsProps {
   table: Table<any>

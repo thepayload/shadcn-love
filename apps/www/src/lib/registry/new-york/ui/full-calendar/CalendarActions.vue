@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { CalendarDays, CalendarRange, TableProperties } from 'lucide-vue-next'
 import { Button } from '@/lib/registry/new-york/ui/button'
 import { ToggleGroup, ToggleGroupItem } from '@/lib/registry/new-york/ui/toggle-group'
 import {
@@ -8,6 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/lib/registry/new-york/ui/tooltip'
+import { CalendarDays, CalendarRange, TableProperties } from 'lucide-vue-next'
 
 const mode = defineModel('mode', {
   default: 'month',

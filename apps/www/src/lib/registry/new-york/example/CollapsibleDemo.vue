@@ -5,7 +5,6 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/lib/registry/new-york/ui/collapsible'
-
 import { CaretSortIcon } from '@radix-icons/vue'
 import { ref } from 'vue'
 

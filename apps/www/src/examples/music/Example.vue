@@ -8,7 +8,6 @@ import {
   TabsList,
   TabsTrigger,
 } from '@/lib/registry/new-york/ui/tabs'
-
 import PlusCircledIcon from '~icons/radix-icons/plus-circled'
 import AlbumArtwork from './components/AlbumArtwork.vue'
 import Menu from './components/Menu.vue'

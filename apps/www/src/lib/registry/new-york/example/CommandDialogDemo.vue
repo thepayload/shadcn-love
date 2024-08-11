@@ -8,7 +8,6 @@ import {
   CommandList,
   CommandSeparator,
 } from '@/lib/registry/new-york/ui/command'
-
 import { useMagicKeys } from '@vueuse/core'
 import { ref, watch } from 'vue'
 

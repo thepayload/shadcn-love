@@ -6,8 +6,8 @@ export const containerClass = 'w-full h-full'
 
 <script setup lang="ts">
 import { Badge } from '@/lib/registry/new-york/ui/badge'
-
 import { Button } from '@/lib/registry/new-york/ui/button'
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/lib/registry/new-york/ui/card'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/lib/registry/new-york/ui/dropdown-menu'
 import { Input } from '@/lib/registry/new-york/ui/input'

@@ -9,7 +9,6 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from '@/lib/registry/new-york/ui/command'
-
 import {
   CalendarIcon,
   EnvelopeClosedIcon,

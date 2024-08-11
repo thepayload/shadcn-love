@@ -56,8 +56,8 @@ const props = defineProps<TooltipProps>()
 
 ```vue
 <script setup lang="ts">
-import TooltipWrapper from '@/components/ui/tooltip/TooltipWrapper'
 import Button from '@/components/ui/button/Button'
+import TooltipWrapper from '@/components/ui/tooltip/TooltipWrapper'
 </script>
 
 <template>

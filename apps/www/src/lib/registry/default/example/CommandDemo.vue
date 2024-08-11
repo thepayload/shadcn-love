@@ -9,7 +9,6 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from '@/lib/registry/default/ui/command'
-
 import {
   Calculator,
   Calendar,

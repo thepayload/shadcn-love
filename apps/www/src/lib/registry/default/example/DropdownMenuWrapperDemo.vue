@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { Button } from '@/lib/registry/default/ui/button'
+
+import { DropdownMenuWrapper } from '@/lib/registry/default/ui/wrapper'
 import {
   Cloud,
   CreditCard,
@@ -11,9 +14,6 @@ import {
   User,
   Users,
 } from 'lucide-vue-next'
-
-import { Button } from '@/lib/registry/default/ui/button'
-import { DropdownMenuWrapper } from '@/lib/registry/default/ui/dropdown-menu'
 
 const menus = [
   [

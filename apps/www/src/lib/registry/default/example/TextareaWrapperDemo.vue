@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import { TextareaWrapper } from '@/lib/registry/default/ui/wrapper'
 import { ref } from 'vue'
-import { TextareaWrapper } from '@/lib/registry/default/ui/textarea'
 
 const note = ref('')
 </script>

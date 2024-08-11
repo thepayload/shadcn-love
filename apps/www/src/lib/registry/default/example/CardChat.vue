@@ -9,7 +9,6 @@ import {
 } from '@/lib/registry/default/ui/card'
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/lib/registry/default/ui/command'
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/lib/registry/default/ui/dialog'
-
 import { Input } from '@/lib/registry/default/ui/input'
 import {
   Tooltip,
@@ -17,6 +16,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/lib/registry/default/ui/tooltip'
+
 import { cn } from '@/lib/utils'
 import { Check, Plus, Send } from 'lucide-vue-next'
 import { computed, ref } from 'vue'

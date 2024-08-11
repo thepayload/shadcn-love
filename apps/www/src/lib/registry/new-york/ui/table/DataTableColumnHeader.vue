@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { Column } from '@tanstack/vue-table'
-import { ArrowDown, ArrowUp, ChevronsUpDown, EyeOff } from 'lucide-vue-next'
+import { cn } from '@/lib/utils'
 
+import { ArrowDown, ArrowUp, ChevronsUpDown, EyeOff } from 'lucide-vue-next'
 import { Button } from '../button'
 import {
   DropdownMenu,
@@ -10,7 +11,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '../dropdown-menu'
-import { cn } from '@/lib/utils'
 
 interface DataTableColumnHeaderProps {
   column: Column<any, any>

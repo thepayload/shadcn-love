@@ -5,10 +5,10 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@/lib/registry/new-york/ui/popover'
-
 import { Calendar } from '@/lib/registry/new-york/ui/v-calendar'
 import { cn } from '@/lib/utils'
 import { CalendarIcon } from '@radix-icons/vue'
+
 import { format } from 'date-fns'
 import { ref } from 'vue'
 

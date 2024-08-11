@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import { AlertWrapper } from '@/lib/registry/default/ui/wrapper'
 import { AlertCircle } from 'lucide-vue-next'
-import { AlertWrapper } from '@/lib/registry/default/ui/alert'
 </script>
 
 <template>

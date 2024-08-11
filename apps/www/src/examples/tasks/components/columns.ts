@@ -1,6 +1,6 @@
 import type { ColumnDef } from '@tanstack/vue-table'
-import type { Task } from '../data/schema'
 
+import type { Task } from '../data/schema'
 import { Badge } from '@/lib/registry/new-york/ui/badge'
 import { Checkbox } from '@/lib/registry/new-york/ui/checkbox'
 import { h } from 'vue'

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { BellRing, Check } from 'lucide-vue-next'
-
-import { CardWrapper } from '@/lib/registry/default/ui/card'
 import { Button } from '@/lib/registry/default/ui/button'
+
 import { Switch } from '@/lib/registry/default/ui/switch'
+import { CardWrapper } from '@/lib/registry/default/ui/wrapper'
+import { BellRing, Check } from 'lucide-vue-next'
 
 const notifications = [
   {

@@ -22,7 +22,7 @@ npx shadcn-vue@latest add wrapper-number-field
 
 ### Copy and paste the following code into your project:
 
-<<< @/lib/registry/default/ui/number-field/NumberFieldWrapper.vue
+<<< @/lib/registry/default/ui/wrapper/NumberFieldWrapper.vue
 
 </Steps>
 

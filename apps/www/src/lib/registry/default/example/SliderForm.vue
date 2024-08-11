@@ -10,7 +10,6 @@ import {
 } from '@/lib/registry/default/ui/form'
 import { Slider } from '@/lib/registry/default/ui/slider'
 import { toast } from '@/lib/registry/default/ui/toast'
-
 import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { h } from 'vue'

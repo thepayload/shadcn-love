@@ -1,16 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import {
-  TabsWrapper,
-} from '@/lib/registry/default/ui/tabs'
 import {
   Button,
 } from '@/lib/registry/default/ui/button'
-import {
-  Input,
-} from '@/lib/registry/default/ui/input'
-import { Label,
-} from '@/lib/registry/default/ui/label'
 import {
   Card,
   CardContent,
@@ -19,6 +10,15 @@ import {
   CardHeader,
   CardTitle,
 } from '@/lib/registry/default/ui/card'
+import {
+  Input,
+} from '@/lib/registry/default/ui/input'
+import { Label,
+} from '@/lib/registry/default/ui/label'
+import {
+  TabsWrapper,
+} from '@/lib/registry/default/ui/wrapper'
+import { ref } from 'vue'
 
 const tabs = [
   {

@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { Minus, Plus } from 'lucide-vue-next'
-import { VisStackedBar, VisXYContainer } from '@unovis/vue'
 import {
   Button,
 } from '@/lib/registry/default/ui/button'
@@ -9,8 +6,13 @@ import {
   DrawerClose,
   DrawerContent,
   DrawerFooter,
-  DrawerWrapper,
 } from '@/lib/registry/default/ui/drawer'
+import {
+  DrawerWrapper,
+} from '@/lib/registry/default/ui/wrapper'
+import { VisStackedBar, VisXYContainer } from '@unovis/vue'
+import { Minus, Plus } from 'lucide-vue-next'
+import { ref } from 'vue'
 
 const goal = ref(350)
 

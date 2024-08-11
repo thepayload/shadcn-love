@@ -14,7 +14,6 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from '@/lib/registry/default/ui/dropdown-menu'
-
 import { Input } from '@/lib/registry/default/ui/input'
 import {
   Table,
@@ -33,6 +32,7 @@ import {
   getSortedRowModel,
   useVueTable,
 } from '@tanstack/vue-table'
+
 import { ChevronDown, ChevronsUpDown } from 'lucide-vue-next'
 import { h, ref } from 'vue'
 import DropdownAction from '../DataTableDemoColumn.vue'

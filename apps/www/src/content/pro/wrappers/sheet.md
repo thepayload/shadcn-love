@@ -74,8 +74,8 @@ const forwarded = useForwardPropsEmits(props, emits)
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 import SheetWrapper from '@/components/ui/sheet/SheetWrapper'
+import { ref } from 'vue'
 
 const isOpen = ref(false)
 </script>
@@ -102,7 +102,6 @@ const isOpen = ref(false)
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 import {
   Sheet,
   SheetContent,
@@ -111,6 +110,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet'
+import { ref } from 'vue'
 
 const isOpen = ref(false)
 </script>

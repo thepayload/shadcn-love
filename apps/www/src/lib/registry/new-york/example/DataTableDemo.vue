@@ -15,7 +15,6 @@ import {
   DropdownMenuTrigger,
 } from '@/lib/registry/new-york/ui/dropdown-menu'
 import { Input } from '@/lib/registry/new-york/ui/input'
-
 import {
   Table,
   TableBody,
@@ -35,6 +34,7 @@ import {
   getSortedRowModel,
   useVueTable,
 } from '@tanstack/vue-table'
+
 import { h, ref } from 'vue'
 import DropdownAction from './DataTableDemoColumn.vue'
 

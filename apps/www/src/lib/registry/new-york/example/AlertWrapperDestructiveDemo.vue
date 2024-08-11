@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ExclamationTriangleIcon } from '@radix-icons/vue'
 import { AlertWrapper } from '@/lib/registry/new-york/ui/alert'
+import { ExclamationTriangleIcon } from '@radix-icons/vue'
 </script>
 
 <template>

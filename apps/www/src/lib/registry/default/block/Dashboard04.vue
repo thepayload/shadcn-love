@@ -6,8 +6,8 @@ export const containerClass = 'w-full h-full'
 
 <script setup lang="ts">
 import { Button } from '@/lib/registry/default/ui/button'
-
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/lib/registry/default/ui/card'
+
 import { Checkbox } from '@/lib/registry/default/ui/checkbox'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/lib/registry/default/ui/dropdown-menu'
 import { Input } from '@/lib/registry/default/ui/input'

@@ -8,7 +8,6 @@ import {
   CommandItem,
   CommandList,
 } from '@/lib/registry/default/ui/command'
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -23,6 +22,7 @@ import {
   DropdownMenuTrigger,
 } from '@/lib/registry/default/ui/dropdown-menu'
 import { Calendar, MoreHorizontal, Tags, Trash, User } from 'lucide-vue-next'
+
 import { ref } from 'vue'
 
 const labels = [

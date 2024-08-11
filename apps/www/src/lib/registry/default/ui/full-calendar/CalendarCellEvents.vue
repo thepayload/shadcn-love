@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed, onUpdated } from 'vue'
-import CalendarCellEvent from './CalendarCellEvent.vue'
 import type { CalendarEventsProps } from '.'
 import { Button } from '@/lib/registry/default/ui/button'
 import {
@@ -8,6 +6,8 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from '@/lib/registry/default/ui/hover-card'
+import { computed, onUpdated } from 'vue'
+import CalendarCellEvent from './CalendarCellEvent.vue'
 
 const props = withDefaults(defineProps<CalendarEventsProps>(), {
   hover: true,

@@ -8,6 +8,8 @@ import type {
   SortingState,
   VisibilityState,
 } from '@tanstack/vue-table'
+import { cn, valueUpdater } from '@/lib/utils'
+
 import {
   FlexRender,
   getCoreRowModel,
@@ -19,9 +21,9 @@ import {
   getSortedRowModel,
   useVueTable,
 } from '@tanstack/vue-table'
-
-import { type Component, h, ref } from 'vue'
 import { ChevronsUpDown } from 'lucide-vue-next'
+import { type Component, h, ref } from 'vue'
+import { Checkbox } from '../checkbox'
 import {
   Table,
   TableBody,
@@ -30,12 +32,10 @@ import {
   TableHeader,
   TableRow,
 } from '../table'
-import { Checkbox } from '../checkbox'
-import DataTableToolbar from './DataTableToolbar.vue'
-import DataTableRowActions from './DataTableRowActions.vue'
-import DataTablePagination from './DataTablePagination.vue'
 import DataTableColumnHeader from './DataTableColumnHeader.vue'
-import { cn, valueUpdater } from '@/lib/utils'
+import DataTablePagination from './DataTablePagination.vue'
+import DataTableRowActions from './DataTableRowActions.vue'
+import DataTableToolbar from './DataTableToolbar.vue'
 
 interface Filter {
   value: string
