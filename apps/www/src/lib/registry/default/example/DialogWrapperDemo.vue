@@ -1,12 +1,15 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { Button } from '@/lib/registry/default/ui/button'
 import {
   DialogFooter,
-  DialogWrapper,
 } from '@/lib/registry/default/ui/dialog'
 import { Input } from '@/lib/registry/default/ui/input'
 import { Label } from '@/lib/registry/default/ui/label'
+
+import {
+  DialogWrapper,
+} from '@/lib/registry/default/ui/wrapper'
+import { ref } from 'vue'
 
 const isOpen = ref(false)
 </script>

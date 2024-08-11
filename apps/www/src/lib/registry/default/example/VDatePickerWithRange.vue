@@ -5,10 +5,10 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@/lib/registry/default/ui/popover'
-
 import { Calendar } from '@/lib/registry/default/ui/v-calendar'
 import { cn } from '@/lib/utils'
 import { addDays, format } from 'date-fns'
+
 import { Calendar as CalendarIcon } from 'lucide-vue-next'
 import { ref } from 'vue'
 

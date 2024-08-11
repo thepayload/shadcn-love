@@ -11,7 +11,6 @@ import {
   AvatarFallback,
   AvatarImage,
 } from '@/lib/registry/new-york/ui/avatar'
-
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -20,12 +19,12 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from '@/lib/registry/new-york/ui/breadcrumb'
-
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/lib/registry/new-york/ui/collapsible'
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -36,6 +35,7 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from '@/lib/registry/new-york/ui/dropdown-menu'
+
 import { Separator } from '@/lib/registry/new-york/ui/separator'
 import {
   Sidebar,

@@ -27,7 +27,7 @@ npm install radix-vue
 
 ### Copy and paste the following code into your project
 
-<<< @/lib/registry/default/ui/textarea/TextareaWrapper.vue
+<<< @/lib/registry/default/ui/wrapper/TextareaWrapper.vue
 
 </Steps>
 

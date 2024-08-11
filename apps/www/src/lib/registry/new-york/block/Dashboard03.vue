@@ -6,8 +6,8 @@ export const containerClass = 'w-full h-full'
 
 <script setup lang="ts">
 import { Badge } from '@/lib/registry/new-york/ui/badge'
-
 import { Button } from '@/lib/registry/new-york/ui/button'
+
 import { Drawer, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle, DrawerTrigger } from '@/lib/registry/new-york/ui/drawer'
 import { Input } from '@/lib/registry/new-york/ui/input'
 import { Label } from '@/lib/registry/new-york/ui/label'

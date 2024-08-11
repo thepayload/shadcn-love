@@ -8,13 +8,13 @@ import {
   CommandItem,
   CommandList,
 } from '@/lib/registry/new-york/ui/command'
-
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from '@/lib/registry/new-york/ui/popover'
 import { cn } from '@/lib/utils'
+
 import { CaretSortIcon, CheckIcon } from '@radix-icons/vue'
 import { ref } from 'vue'
 

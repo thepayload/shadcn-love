@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ToggleGroup, ToggleGroupItem } from '@/lib/registry/new-york/ui/toggle-group'
-
 import {
   FontBoldIcon,
   FontItalicIcon,

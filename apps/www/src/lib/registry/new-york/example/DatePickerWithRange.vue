@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { DateRange } from 'radix-vue'
 import { Button } from '@/lib/registry/new-york/ui/button'
-
 import { Popover, PopoverContent, PopoverTrigger } from '@/lib/registry/new-york/ui/popover'
 import { RangeCalendar } from '@/lib/registry/new-york/ui/range-calendar'
 import { cn } from '@/lib/utils'
+
 import {
   CalendarDate,
   DateFormatter,

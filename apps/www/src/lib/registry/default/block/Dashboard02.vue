@@ -6,8 +6,8 @@ export const containerClass = 'w-full h-full'
 
 <script setup lang="ts">
 import { Badge } from '@/lib/registry/default/ui/badge'
-
 import { Button } from '@/lib/registry/default/ui/button'
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/lib/registry/default/ui/card'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/lib/registry/default/ui/dropdown-menu'
 import { Input } from '@/lib/registry/default/ui/input'

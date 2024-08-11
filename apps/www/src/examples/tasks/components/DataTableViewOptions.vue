@@ -10,8 +10,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/lib/registry/new-york/ui/dropdown-menu'
-
 import MixerHorizontalIcon from '~icons/radix-icons/mixer-horizontal'
+
 import { computed } from 'vue'
 
 interface DataTableViewOptionsProps {

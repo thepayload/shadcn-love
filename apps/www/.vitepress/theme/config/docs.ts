@@ -52,23 +52,7 @@ export const docsConfig: DocsConfig = {
     {
       title: 'Pro',
       label: 'New',
-      items: [
-        {
-          title: 'Blocks',
-          href: '/pro/blocks',
-          description: 'Pre-built components, including authentication, navigation, and more.',
-        },
-        {
-          title: 'Products',
-          href: '/pro/products',
-          description: 'Some examples of products like e-commerce, CRM, and more. Built with Shadcn Vue.',
-        },
-        {
-          title: 'Themes',
-          href: '/pro/themes',
-          description: 'Some pre-built themes configured with Shadcn Vue. Including spacing, colors, and more.',
-        },
-      ],
+      href: '/pro/wrappers/alert',
     },
   ],
   sidebarNav: [

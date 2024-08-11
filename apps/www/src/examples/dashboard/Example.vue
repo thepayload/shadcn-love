@@ -14,10 +14,10 @@ import {
   TabsTrigger,
 } from '@/lib/registry/new-york/ui/tabs'
 import DateRangePicker from './components/DateRangePicker.vue'
+
 import MainNav from './components/MainNav.vue'
 import Overview from './components/Overview.vue'
 import RecentSales from './components/RecentSales.vue'
-
 import Search from './components/Search.vue'
 import TeamSwitcher from './components/TeamSwitcher.vue'
 import UserNav from './components/UserNav.vue'

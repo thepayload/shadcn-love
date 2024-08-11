@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
-import { codeToHtml } from 'shiki'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/lib/registry/default/ui/tabs'
+import { cn } from '@/lib/utils'
+import { useConfigStore } from '@/stores/config'
 import MagicString from 'magic-string'
+import { codeToHtml } from 'shiki'
+import { ref, watch } from 'vue'
 import { cssVariables } from '../config/shiki'
-import StyleSwitcher from './StyleSwitcher.vue'
+import CodeSandbox from './CodeSandbox.vue'
 import ProComponentLoader from './ProComponentLoader.vue'
 import Stackblitz from './Stackblitz.vue'
-import CodeSandbox from './CodeSandbox.vue'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/lib/registry/default/ui/tabs'
-import { useConfigStore } from '@/stores/config'
-import { cn } from '@/lib/utils'
+import StyleSwitcher from './StyleSwitcher.vue'
 
 defineOptions({
   inheritAttrs: false,

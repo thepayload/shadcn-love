@@ -18,10 +18,10 @@ import {
   FormLabel,
   FormMessage,
 } from '@/lib/registry/default/ui/form'
-
 import { Input } from '@/lib/registry/default/ui/input'
 import { toast } from '@/lib/registry/default/ui/toast'
 import { toTypedSchema } from '@vee-validate/zod'
+
 import { h } from 'vue'
 import * as z from 'zod'
 

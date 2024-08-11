@@ -5,8 +5,8 @@ import type {
   SortingState,
   VisibilityState,
 } from '@tanstack/vue-table'
-import type { Task } from '../data/schema'
 
+import type { Task } from '../data/schema'
 import {
   Table,
   TableBody,

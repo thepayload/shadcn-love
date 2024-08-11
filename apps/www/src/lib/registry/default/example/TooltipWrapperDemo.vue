@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Button } from '@/lib/registry/default/ui/button'
-import { TooltipWrapper } from '@/lib/registry/default/ui/tooltip'
+import { TooltipWrapper } from '@/lib/registry/default/ui/wrapper'
 </script>
 
 <template>

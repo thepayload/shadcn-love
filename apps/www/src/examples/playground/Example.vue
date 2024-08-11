@@ -5,6 +5,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from '@/lib/registry/new-york/ui/hover-card'
+
 import { Label } from '@/lib/registry/new-york/ui/label'
 import { Separator } from '@/lib/registry/new-york/ui/separator'
 import {
@@ -17,7 +18,6 @@ import { Textarea } from '@/lib/registry/new-york/ui/textarea'
 import CounterClockwiseClockIcon from '~icons/radix-icons/counter-clockwise-clock'
 import CodeViewer from './components/CodeViewer.vue'
 import MaxLengthSelector from './components/MaxLengthSelector.vue'
-
 import ModelSelector from './components/ModelSelector.vue'
 import PresetActions from './components/PresetActions.vue'
 import PresetSave from './components/PresetSave.vue'

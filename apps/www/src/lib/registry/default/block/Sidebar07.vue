@@ -11,7 +11,6 @@ import {
   AvatarFallback,
   AvatarImage,
 } from '@/lib/registry/default/ui/avatar'
-
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -20,12 +19,12 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from '@/lib/registry/default/ui/breadcrumb'
-
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/lib/registry/default/ui/collapsible'
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -36,6 +35,7 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from '@/lib/registry/default/ui/dropdown-menu'
+
 import { Separator } from '@/lib/registry/default/ui/separator'
 import {
   Sidebar,

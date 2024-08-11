@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Button, buttonVariants } from '@/lib/registry/default/ui/button'
-
 import {
   Popover,
   PopoverContent,
@@ -15,7 +14,6 @@ import {
   RangeCalendarGridRow,
   RangeCalendarHeadCell,
 } from '@/lib/registry/default/ui/range-calendar'
-
 import { cn } from '@/lib/utils'
 import {
   CalendarDate,

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { Button } from '@/lib/registry/default/ui/button'
-import { AlertDialogWrapper } from '@/lib/registry/default/ui/alert-dialog'
+import { AlertDialogWrapper } from '@/lib/registry/default/ui/wrapper'
+import { ref } from 'vue'
 
 const isOpen = ref(false)
 

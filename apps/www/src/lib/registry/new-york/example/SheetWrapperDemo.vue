@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import {
-  SheetWrapper,
-} from '@/lib/registry/new-york/ui/sheet'
 import { Button } from '@/lib/registry/new-york/ui/button'
 import { Input } from '@/lib/registry/new-york/ui/input'
 import { Label } from '@/lib/registry/new-york/ui/label'
+import {
+  SheetWrapper,
+} from '@/lib/registry/new-york/ui/sheet'
+import { ref } from 'vue'
 
 const isOpen = ref(false)
 </script>

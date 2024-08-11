@@ -1,7 +1,8 @@
 <script lang="ts" setup>
-import Logo from '@/components/brand/Logo.vue'
-import Google from '@/components/brand/Google.vue'
 import Facebook from '@/components/brand/Facebook.vue'
+import Google from '@/components/brand/Google.vue'
+import Logo from '@/components/brand/Logo.vue'
+import { Button } from '@/lib/registry/default/ui/button'
 import {
   Card,
   CardContent,
@@ -19,7 +20,6 @@ import {
   FormMessage,
 } from '@/lib/registry/default/ui/form'
 import { Input } from '@/lib/registry/default/ui/input'
-import { Button } from '@/lib/registry/default/ui/button'
 import { Separator } from '@/lib/registry/default/ui/separator'
 </script>
 

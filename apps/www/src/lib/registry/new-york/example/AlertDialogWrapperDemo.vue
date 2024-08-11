@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { Button } from '@/lib/registry/new-york/ui/button'
 import { AlertDialogWrapper } from '@/lib/registry/new-york/ui/alert-dialog'
+import { Button } from '@/lib/registry/new-york/ui/button'
+import { ref } from 'vue'
 
 const isOpen = ref(false)
 

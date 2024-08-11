@@ -4,8 +4,8 @@ import {
   AvatarFallback,
   AvatarImage,
 } from '@/lib/registry/new-york/ui/avatar'
-
 import { Button } from '@/lib/registry/new-york/ui/button'
+
 import {
   HoverCard,
   HoverCardContent,

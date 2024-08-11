@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { Button } from '@/lib/registry/default/ui/button'
-
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/lib/registry/default/ui/collapsible'
 import { ChevronsUpDown } from 'lucide-vue-next'
+
 import { ref } from 'vue'
 
 const isOpen = ref(false)

@@ -5,16 +5,16 @@ import type { Task } from '../data/schema'
 import { Badge } from '@/lib/registry/new-york/ui/badge'
 import { Button } from '@/lib/registry/new-york/ui/button'
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator } from '@/lib/registry/new-york/ui/command'
-
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from '@/lib/registry/new-york/ui/popover'
+
 import { Separator } from '@/lib/registry/new-york/ui/separator'
 import { cn } from '@/lib/utils'
-
 import CheckIcon from '~icons/radix-icons/check'
+
 import PlusCircledIcon from '~icons/radix-icons/plus-circled'
 import { computed } from 'vue'
 

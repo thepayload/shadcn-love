@@ -25,9 +25,9 @@ npx shadcn-vue@latest add wrapper-avatar
 ```vue
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
-import { type AvatarVariants, avatarVariant } from '.'
-import { cn } from '@/lib/utils'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { cn } from '@/lib/utils'
+import { avatarVariant, type AvatarVariants } from '.'
 
 const props = withDefaults(
   defineProps<{

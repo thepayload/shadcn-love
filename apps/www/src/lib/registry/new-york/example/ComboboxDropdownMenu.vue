@@ -8,7 +8,6 @@ import {
   CommandItem,
   CommandList,
 } from '@/lib/registry/new-york/ui/command'
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -23,6 +22,7 @@ import {
   DropdownMenuTrigger,
 } from '@/lib/registry/new-york/ui/dropdown-menu'
 import { DotsHorizontalIcon } from '@radix-icons/vue'
+
 import { ref } from 'vue'
 
 const labels = [

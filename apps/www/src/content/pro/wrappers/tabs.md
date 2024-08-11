@@ -24,8 +24,8 @@ npx shadcn-vue@latest add wrapper-tabs
 
 ```vue
 <script setup lang="ts">
-import { useForwardPropsEmits } from 'radix-vue'
 import type { TabsRootEmits, TabsRootProps } from 'radix-vue'
+import { useForwardPropsEmits } from 'radix-vue'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '.'
 
 const props = defineProps<

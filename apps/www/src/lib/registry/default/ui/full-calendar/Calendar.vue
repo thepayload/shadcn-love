@@ -1,9 +1,4 @@
 <script lang="ts" setup>
-import { type HTMLAttributes, computed, ref } from 'vue'
-import { CalendarRoot, type CalendarRootEmits, type CalendarRootProps, useForwardPropsEmits } from 'radix-vue'
-import { useCalendarEvents } from './useCalendarEvents'
-import { CalendarActions, CalendarCell, CalendarCellEvent, CalendarCellEvents, CalendarCellTrigger, type CalendarEvent, CalendarGrid, CalendarGridBody, CalendarGridHead, CalendarGridRow, CalendarHeadCell, CalendarHeader, CalendarHeading, CalendarNextButton, CalendarPrevButton } from '.'
-import { cn } from '@/lib/utils'
 import {
   Dialog,
   DialogContent,
@@ -11,6 +6,11 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/lib/registry/default/ui/dialog'
+import { cn } from '@/lib/utils'
+import { CalendarRoot, type CalendarRootEmits, type CalendarRootProps, useForwardPropsEmits } from 'radix-vue'
+import { computed, type HTMLAttributes, ref } from 'vue'
+import { CalendarActions, CalendarCell, CalendarCellEvent, CalendarCellEvents, CalendarCellTrigger, type CalendarEvent, CalendarGrid, CalendarGridBody, CalendarGridHead, CalendarGridRow, CalendarHeadCell, CalendarHeader, CalendarHeading, CalendarNextButton, CalendarPrevButton } from '.'
+import { useCalendarEvents } from './useCalendarEvents'
 
 const props = defineProps<CalendarRootProps & { class?: HTMLAttributes['class'], events: CalendarEvent[] }>()
 

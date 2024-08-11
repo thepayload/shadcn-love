@@ -14,7 +14,6 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from '@/lib/registry/new-york/ui/dropdown-menu'
-
 import { Input } from '@/lib/registry/new-york/ui/input'
 import {
   Table,
@@ -26,6 +25,7 @@ import {
 } from '@/lib/registry/new-york/ui/table'
 import { valueUpdater } from '@/lib/utils'
 import { CaretSortIcon, ChevronDownIcon } from '@radix-icons/vue'
+
 import {
   FlexRender,
   getCoreRowModel,

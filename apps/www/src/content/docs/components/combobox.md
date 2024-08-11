@@ -23,7 +23,6 @@ See installation instructions for the [Popover](/docs/components/popover#install
 ```vue
 <script setup lang="ts">
 import { Button } from '@/components/ui/button'
-
 import {
   Command,
   CommandEmpty,
@@ -37,6 +36,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover'
+
 import { cn } from '@/lib/utils'
 import { Check, ChevronsUpDown } from 'lucide-vue-next'
 import { ref } from 'vue'

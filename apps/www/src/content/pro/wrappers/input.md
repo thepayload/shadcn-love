@@ -21,7 +21,7 @@ npx shadcn-vue@latest add wrapper-input
 
 ### Copy and paste the following code into your project:
 
-<<< @/lib/registry/default/ui/input/InputWrapper.vue
+<<< @/lib/registry/default/ui/wrapper/InputWrapper.vue
 
 </Steps>
 

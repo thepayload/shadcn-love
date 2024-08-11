@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
 import type { ColumnDef } from '@tanstack/vue-table'
+import { Badge } from '@/lib/registry/new-york/ui/badge'
+import { Button } from '@/lib/registry/new-york/ui/button'
+import { DataTable } from '@/lib/registry/new-york/ui/table'
 import {
   CreditCard,
   Settings,
   Trash2,
   User,
 } from 'lucide-vue-next'
+import { onMounted, ref } from 'vue'
 import { z } from 'zod'
-import { Badge } from '@/lib/registry/new-york/ui/badge'
-import { DataTable } from '@/lib/registry/new-york/ui/table'
-import { Button } from '@/lib/registry/new-york/ui/button'
 
 // We're keeping a simple non-relational schema here.
 // IRL, you will have a schema for your data models.

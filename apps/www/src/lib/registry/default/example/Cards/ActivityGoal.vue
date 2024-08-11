@@ -8,9 +8,9 @@ import {
   CardHeader,
   CardTitle,
 } from '@/lib/registry/default/ui/card'
+
 import { VisStackedBar, VisXYContainer } from '@unovis/vue'
 import { Minus, Plus } from 'lucide-vue-next'
-
 import { ref } from 'vue'
 
 const goal = ref(350)

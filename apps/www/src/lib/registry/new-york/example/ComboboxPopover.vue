@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Button } from '@/lib/registry/new-york/ui/button'
-
 import {
   Command,
   CommandEmpty,
@@ -9,6 +8,7 @@ import {
   CommandItem,
   CommandList,
 } from '@/lib/registry/new-york/ui/command'
+
 import {
   Popover,
   PopoverContent,

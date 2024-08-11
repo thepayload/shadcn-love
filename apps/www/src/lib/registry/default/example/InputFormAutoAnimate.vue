@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Button } from '@/lib/registry/default/ui/button'
+
 import {
   FormControl,
   FormDescription,
@@ -11,7 +12,6 @@ import {
 import { Input } from '@/lib/registry/default/ui/input'
 import { toast } from '@/lib/registry/default/ui/toast'
 import { vAutoAnimate } from '@formkit/auto-animate/vue'
-
 import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { h } from 'vue'

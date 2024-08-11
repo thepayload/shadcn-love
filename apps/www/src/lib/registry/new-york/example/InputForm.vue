@@ -10,7 +10,6 @@ import {
 } from '@/lib/registry/new-york/ui/form'
 import { Input } from '@/lib/registry/new-york/ui/input'
 import { toast } from '@/lib/registry/new-york/ui/toast/use-toast'
-
 import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { h } from 'vue'

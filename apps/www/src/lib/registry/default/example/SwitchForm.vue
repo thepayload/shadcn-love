@@ -9,7 +9,6 @@ import {
 } from '@/lib/registry/default/ui/form'
 import { Switch } from '@/lib/registry/default/ui/switch'
 import { toast } from '@/lib/registry/default/ui/toast'
-
 import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { h } from 'vue'

@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import type { Column } from '@tanstack/vue-table'
 import type { Component } from 'vue'
-import { computed } from 'vue'
+import { cn } from '@/lib/utils'
 import { Check, CirclePlus } from 'lucide-vue-next'
 
+import { computed } from 'vue'
 import { Badge } from '../badge'
 import { Button } from '../button'
+
 import {
   Command,
   CommandEmpty,
@@ -15,10 +17,8 @@ import {
   CommandList,
   CommandSeparator,
 } from '../command'
-
 import { Popover, PopoverContent, PopoverTrigger } from '../popover'
 import { Separator } from '../separator'
-import { cn } from '@/lib/utils'
 
 interface DataTableFacetedFilter {
   column?: Column<any, any>

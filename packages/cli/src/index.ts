@@ -2,8 +2,8 @@
 import process from 'node:process'
 
 import { add } from '@/src/commands/add'
-
 import { diff } from '@/src/commands/diff'
+
 import { init } from '@/src/commands/init'
 import { getPackageInfo } from '@/src/utils/get-package-info'
 import { Command } from 'commander'

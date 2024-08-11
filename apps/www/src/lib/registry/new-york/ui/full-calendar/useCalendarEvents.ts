@@ -1,5 +1,5 @@
-import { computed } from 'vue'
 import type { CalendarEvent } from '.'
+import { computed } from 'vue'
 
 export function useCalendarEvents(events: CalendarEvent[]) {
   const mapEvents = computed(() => {

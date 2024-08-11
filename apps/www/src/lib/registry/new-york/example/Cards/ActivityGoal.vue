@@ -8,9 +8,9 @@ import {
   CardHeader,
   CardTitle,
 } from '@/lib/registry/new-york/ui/card'
+
 import { MinusIcon, PlusIcon } from '@radix-icons/vue'
 import { VisStackedBar, VisXYContainer } from '@unovis/vue'
-
 import { ref } from 'vue'
 
 const goal = ref(350)

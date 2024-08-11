@@ -1,16 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import {
-  TabsWrapper,
-} from '@/lib/registry/new-york/ui/tabs'
 import {
   Button,
 } from '@/lib/registry/new-york/ui/button'
-import {
-  Input,
-} from '@/lib/registry/new-york/ui/input'
-import { Label,
-} from '@/lib/registry/new-york/ui/label'
 import {
   Card,
   CardContent,
@@ -19,6 +10,15 @@ import {
   CardHeader,
   CardTitle,
 } from '@/lib/registry/new-york/ui/card'
+import {
+  Input,
+} from '@/lib/registry/new-york/ui/input'
+import { Label,
+} from '@/lib/registry/new-york/ui/label'
+import {
+  TabsWrapper,
+} from '@/lib/registry/new-york/ui/tabs'
+import { ref } from 'vue'
 
 const tabs = [
   {

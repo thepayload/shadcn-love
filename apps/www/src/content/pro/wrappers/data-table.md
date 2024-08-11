@@ -131,11 +131,13 @@ const props = defineProps<DataTableRowActionsProps>()
 <script setup lang="ts">
 import type { Column } from '@tanstack/vue-table'
 import type { Component } from 'vue'
-import { computed } from 'vue'
+import { cn } from '@/lib/utils'
 import { Check, CirclePlus } from 'lucide-vue-next'
 
+import { computed } from 'vue'
 import { Badge } from '../badge'
 import { Button } from '../button'
+
 import {
   Command,
   CommandEmpty,
@@ -145,10 +147,8 @@ import {
   CommandList,
   CommandSeparator
 } from '../command'
-
 import { Popover, PopoverContent, PopoverTrigger } from '../popover'
 import { Separator } from '../separator'
-import { cn } from '@/lib/utils'
 
 interface DataTableFacetedFilter {
   column?: Column<any, any>
@@ -280,10 +280,11 @@ function filterFunction(list: DataTableFacetedFilter['options'], term: any): any
 
 ```vue
 <script setup lang="ts">
-import { computed } from 'vue'
 import type { Table } from '@tanstack/vue-table'
 import { SlidersHorizontal } from 'lucide-vue-next'
+import { computed } from 'vue'
 
+import { Button } from '../button'
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -292,7 +293,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger
 } from '../dropdown-menu'
-import { Button } from '../button'
 
 interface DataTableViewOptionsProps {
   table: Table<any>
@@ -338,13 +338,13 @@ const columns = computed(() =>
 ```vue
 <script setup lang="ts" generic="TData">
 import type { Table } from '@tanstack/vue-table'
-import { type Component, computed } from 'vue'
-
 import { X } from 'lucide-vue-next'
+
+import { type Component, computed } from 'vue'
 import { Button } from '../button'
 import { Input } from '../input'
-import DataTableViewOptions from './DataTableViewOptions.vue'
 import DataTableFacetedFilter from './DataTableFacetedFilter.vue'
+import DataTableViewOptions from './DataTableViewOptions.vue'
 
 interface Filter {
   value: string
@@ -509,8 +509,9 @@ defineProps<DataTablePaginationProps>()
 ```vue
 <script setup lang="ts">
 import type { Column } from '@tanstack/vue-table'
-import { ArrowDown, ArrowUp, ChevronsUpDown, EyeOff } from 'lucide-vue-next'
+import { cn } from '@/lib/utils'
 
+import { ArrowDown, ArrowUp, ChevronsUpDown, EyeOff } from 'lucide-vue-next'
 import { Button } from '../button'
 import {
   DropdownMenu,
@@ -519,7 +520,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger
 } from '../dropdown-menu'
-import { cn } from '@/lib/utils'
 
 interface DataTableColumnHeaderProps {
   column: Column<any, any>
@@ -583,6 +583,8 @@ import type {
   SortingState,
   VisibilityState
 } from '@tanstack/vue-table'
+import { cn, valueUpdater } from '@/lib/utils'
+
 import {
   FlexRender,
   getCoreRowModel,
@@ -594,9 +596,9 @@ import {
   getSortedRowModel,
   useVueTable
 } from '@tanstack/vue-table'
-
-import { type Component, h, ref } from 'vue'
 import { ChevronsUpDown } from 'lucide-vue-next'
+import { type Component, h, ref } from 'vue'
+import { Checkbox } from '../checkbox'
 import {
   Table,
   TableBody,
@@ -605,12 +607,10 @@ import {
   TableHeader,
   TableRow
 } from '../table'
-import { Checkbox } from '../checkbox'
-import DataTableToolbar from './DataTableToolbar.vue'
-import DataTableRowActions from './DataTableRowActions.vue'
-import DataTablePagination from './DataTablePagination.vue'
 import DataTableColumnHeader from './DataTableColumnHeader.vue'
-import { cn, valueUpdater } from '@/lib/utils'
+import DataTablePagination from './DataTablePagination.vue'
+import DataTableRowActions from './DataTableRowActions.vue'
+import DataTableToolbar from './DataTableToolbar.vue'
 
 interface Filter {
   value: string
@@ -887,18 +887,18 @@ const table = useVueTable({
 
 ```vue
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
 import type { ColumnDef } from '@tanstack/vue-table'
+import { Badge } from '@/lib/registry/default/ui/badge'
+import { Button } from '@/lib/registry/default/ui/button'
+import { DataTable } from '@/lib/registry/default/ui/table'
 import {
   CreditCard,
   Settings,
   Trash2,
   User
 } from 'lucide-vue-next'
+import { onMounted, ref } from 'vue'
 import { z } from 'zod'
-import { Badge } from '@/lib/registry/default/ui/badge'
-import { DataTable } from '@/lib/registry/default/ui/table'
-import { Button } from '@/lib/registry/default/ui/button'
 
 // We're keeping a simple non-relational schema here.
 // IRL, you will have a schema for your data models.

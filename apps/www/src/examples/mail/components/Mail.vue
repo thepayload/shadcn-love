@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import type { Mail } from '../data/mails'
-
 import { Input } from '@/lib/registry/new-york/ui/input'
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/lib/registry/new-york/ui/resizable'
 import { Separator } from '@/lib/registry/new-york/ui/separator'
+
 import {
   Tabs,
   TabsContent,

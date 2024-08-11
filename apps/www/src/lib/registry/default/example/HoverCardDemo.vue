@@ -4,8 +4,8 @@ import {
   AvatarFallback,
   AvatarImage,
 } from '@/lib/registry/default/ui/avatar'
-
 import { Button } from '@/lib/registry/default/ui/button'
+
 import {
   HoverCard,
   HoverCardContent,

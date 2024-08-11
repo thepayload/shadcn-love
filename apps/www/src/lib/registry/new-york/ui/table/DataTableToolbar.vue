@@ -1,12 +1,12 @@
 <script setup lang="ts" generic="TData">
 import type { Table } from '@tanstack/vue-table'
-import { type Component, computed } from 'vue'
-
 import { X } from 'lucide-vue-next'
+
+import { type Component, computed } from 'vue'
 import { Button } from '../button'
 import { Input } from '../input'
-import DataTableViewOptions from './DataTableViewOptions.vue'
 import DataTableFacetedFilter from './DataTableFacetedFilter.vue'
+import DataTableViewOptions from './DataTableViewOptions.vue'
 
 interface Filter {
   value: string

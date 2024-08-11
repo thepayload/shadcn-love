@@ -5,7 +5,6 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@/lib/registry/new-york/ui/popover'
-
 import {
   Select,
   SelectContent,
@@ -15,6 +14,7 @@ import {
 } from '@/lib/registry/new-york/ui/select'
 import { Calendar } from '@/lib/registry/new-york/ui/v-calendar'
 import { cn } from '@/lib/utils'
+
 import { CalendarIcon } from '@radix-icons/vue'
 import { addDays, format } from 'date-fns'
 import { ref } from 'vue'
