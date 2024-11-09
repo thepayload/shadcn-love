@@ -2,10 +2,10 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/lib/registry/default/ui/tabs'
 import { cn } from '@/lib/utils'
 import { useConfigStore } from '@/stores/config'
+import { useClipboard } from '@vueuse/core'
 import MagicString from 'magic-string'
-import { codeToHtml } from 'shiki'
-import { ref, watch } from 'vue'
-import { cssVariables } from '../config/shiki'
+import { computed, ref, watch } from 'vue'
+import { highlight } from '../config/shiki'
 import CodeSandbox from './CodeSandbox.vue'
 import ProComponentLoader from './ProComponentLoader.vue'
 import Stackblitz from './Stackblitz.vue'
@@ -24,6 +24,7 @@ const { style, codeConfig } = useConfigStore()
 
 const rawString = ref('')
 const codeHtml = ref('')
+const transformedRawString = computed(() => transformImportPath(rawString.value))
 
 function transformImportPath(code: string) {
   const s = new MagicString(code)
@@ -35,15 +36,14 @@ function transformImportPath(code: string) {
 watch([style, codeConfig], async () => {
   try {
     rawString.value = await import(`../../../src/lib/registry/${style.value}/pro/${props.name}.vue?raw`).then(res => res.default.trim())
-    codeHtml.value = await codeToHtml(transformImportPath(rawString.value), {
-      lang: 'vue',
-      theme: cssVariables,
-    })
+    codeHtml.value = highlight(transformedRawString.value, 'vue')
   }
   catch (err) {
     console.error(err)
   }
 }, { immediate: true, deep: true })
+
+const { copy, copied } = useClipboard()
 </script>
 
 <template>
@@ -83,11 +83,15 @@ watch([style, codeConfig], async () => {
             'items-end': align === 'end',
           })"
         >
-          <ProComponentLoader v-bind="$attrs" :key="style" :name="name" :type-name="'pro'" />
+          <ProComponentLoader v-bind="$attrs" :key="style" :name="name" :type-name="'example'" />
         </div>
       </TabsContent>
-      <TabsContent value="code">
-        <div v-if="codeHtml" class="language-vue" style="flex: 1;" v-html="codeHtml" />
+      <TabsContent value="code" class="vp-doc">
+        <div v-if="codeHtml" class="language-vue" style="flex: 1;">
+          <button title="Copy Code" class="copy" :class="{ copied }" @click="copy(transformedRawString)" />
+
+          <div v-html="codeHtml" />
+        </div>
         <slot v-else />
       </TabsContent>
     </Tabs>
