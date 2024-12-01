@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ContextMenuWrapper } from '@/lib/registry/default/ui/wrapper'
+import { ContextMenuWrapper } from '@/lib/registry/default/ui/pro/wrapper'
 
 const menus = [
   {

@@ -4,10 +4,10 @@ import {
   MenubarContent,
   MenubarMenu,
   MenubarTrigger,
-} from '@/lib/registry/new-york/ui/menubar'
+} from '@/lib/registry/default/ui/menubar'
 import {
   MenubarWrapperContent,
-} from '@/lib/registry/new-york/ui/wrapper'
+} from '@/lib/registry/default/ui/pro/wrapper'
 
 interface Menu {
   label: string

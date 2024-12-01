@@ -17,7 +17,7 @@ import { Label,
 } from '@/lib/registry/default/ui/label'
 import {
   TabsWrapper,
-} from '@/lib/registry/default/ui/wrapper'
+} from '@/lib/registry/default/ui/pro/wrapper'
 import { ref } from 'vue'
 
 const tabs = [

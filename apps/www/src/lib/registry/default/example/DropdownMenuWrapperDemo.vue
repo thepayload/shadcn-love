@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Button } from '@/lib/registry/default/ui/button'
 
-import { DropdownMenuWrapper } from '@/lib/registry/default/ui/wrapper'
+import { DropdownMenuWrapper } from '@/lib/registry/default/ui/pro/wrapper'
 import {
   Cloud,
   CreditCard,
