@@ -547,6 +547,54 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
+      title: 'Forms',
+      label: 'Pro',
+      items: [
+        {
+          title: 'Phone Input',
+          href: '/pro/forms/phone-input',
+        },
+        {
+          title: 'Google Address',
+          href: '/pro/forms/google-address',
+        },
+        {
+          title: 'Autocomplete',
+          href: '/pro/forms/google-address',
+        },
+        {
+          title: 'Select Object',
+          href: '/pro/forms/google-address',
+        },
+        {
+          title: 'Multi Select Object',
+          href: '/pro/forms/google-address',
+        },
+        {
+          title: 'Radio Object',
+          href: '/pro/forms/google-address',
+        },
+        {
+          title: 'Extends Auto Form',
+          href: '/pro/forms/auto-form',
+        },
+      ],
+    },
+    {
+      title: 'Tables',
+      label: 'Pro',
+      items: [
+        {
+          title: 'Data table',
+          href: '/pro/wrappers/alert',
+        },
+        {
+          title: 'Server table',
+          href: '/pro/wrappers/alert',
+        },
+      ],
+    },
+    {
       title: 'Blocks',
       label: 'Pro',
       items: [
