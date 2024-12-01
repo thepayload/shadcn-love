@@ -4,7 +4,7 @@ import { Input } from '@/lib/registry/default/ui/input'
 import { Label } from '@/lib/registry/default/ui/label'
 import {
   SheetWrapper,
-} from '@/lib/registry/default/ui/wrapper'
+} from '@/lib/registry/default/ui/pro/wrapper'
 import { ref } from 'vue'
 
 const isOpen = ref(false)

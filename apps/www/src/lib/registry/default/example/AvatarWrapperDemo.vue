@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AvatarWrapper } from '@/lib/registry/default/ui/wrapper'
+import { AvatarWrapper } from '@/lib/registry/default/ui/pro/wrapper'
 </script>
 
 <template>

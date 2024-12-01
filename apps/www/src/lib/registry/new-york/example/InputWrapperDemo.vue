@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { InputWrapper } from '@/lib/registry/new-york/ui/wrapper'
+import { InputWrapper } from '@/lib/registry/new-york/ui/pro/wrapper'
 import { ref } from 'vue'
 
 const email = ref('')

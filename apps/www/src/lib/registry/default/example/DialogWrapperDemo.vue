@@ -8,7 +8,7 @@ import { Label } from '@/lib/registry/default/ui/label'
 
 import {
   DialogWrapper,
-} from '@/lib/registry/default/ui/wrapper'
+} from '@/lib/registry/default/ui/pro/wrapper'
 import { ref } from 'vue'
 
 const isOpen = ref(false)

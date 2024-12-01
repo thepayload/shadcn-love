@@ -560,19 +560,19 @@ export const docsConfig: DocsConfig = {
         },
         {
           title: 'Autocomplete',
-          href: '/pro/forms/google-address',
+          href: '/pro/forms/auto-complete',
         },
         {
           title: 'Select Object',
-          href: '/pro/forms/google-address',
+          href: '/pro/forms/select-object',
         },
         {
           title: 'Multi Select Object',
-          href: '/pro/forms/google-address',
+          href: '/pro/forms/multi-select-object',
         },
         {
           title: 'Radio Object',
-          href: '/pro/forms/google-address',
+          href: '/pro/forms/radio-object',
         },
         {
           title: 'Extends Auto Form',
@@ -586,11 +586,25 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: 'Data table',
-          href: '/pro/wrappers/alert',
+          href: '/pro/tables/data-table',
         },
         {
           title: 'Server table',
-          href: '/pro/wrappers/alert',
+          href: '/pro/tables/server-table',
+        },
+      ],
+    },
+    {
+      title: 'Calendar & Schedule',
+      label: 'Pro',
+      items: [
+        {
+          title: 'Calendar',
+          href: '/pro/calendars/calendar',
+        },
+        {
+          title: 'Schedule',
+          href: '/pro/calendars/schedule',
         },
       ],
     },

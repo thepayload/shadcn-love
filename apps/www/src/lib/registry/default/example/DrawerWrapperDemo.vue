@@ -9,7 +9,7 @@ import {
 } from '@/lib/registry/default/ui/drawer'
 import {
   DrawerWrapper,
-} from '@/lib/registry/default/ui/wrapper'
+} from '@/lib/registry/default/ui/pro/wrapper'
 import { VisStackedBar, VisXYContainer } from '@unovis/vue'
 import { Minus, Plus } from 'lucide-vue-next'
 import { ref } from 'vue'
