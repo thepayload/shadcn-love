@@ -83,7 +83,7 @@ const { copy, copied } = useClipboard()
             'items-end': align === 'end',
           })"
         >
-          <ProComponentLoader v-bind="$attrs" :key="style" :name="name" :type-name="'example'" />
+          <ProComponentLoader v-bind="$attrs" :key="style" :name="name" :type-name="'pro'" />
         </div>
       </TabsContent>
       <TabsContent value="code" class="vp-doc">
